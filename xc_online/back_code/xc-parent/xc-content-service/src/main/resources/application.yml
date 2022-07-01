@@ -1,0 +1,30 @@
+#微服务配置
+spring:
+  application:
+    name: content-service
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+# 下面的配置已经在apollo中配置
+  datasource:
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.94.129:3306/xc_content?useUnicode=true&characterEncoding=utf8&useSSL=false
+
+# MP 的配置信息 下面的配置已经在apollo中配置
+mybatis-plus:
+  mapper-locations: classpath:com.xuecheng.content.mapper/*.xml  #加载 mybatis 映射文件的位置
+
+# 日志文件配置路径
+logging:
+  config: classpath:log4j2-dev.xml
+
+
+# swagger 文档配置
+swagger:
+  title: "学成在线内容管理系统"
+  description: "内容系统管理系统对课程相关信息进行业务管理数据"
+  base-package: com.xuecheng
+  enabled: true
+  version: 1.0.0

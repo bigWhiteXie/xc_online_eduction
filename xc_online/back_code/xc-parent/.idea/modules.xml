@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/xc-api/xc-api.iml" filepath="$PROJECT_DIR$/xc-api/xc-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xc-common/xc-common.iml" filepath="$PROJECT_DIR$/xc-common/xc-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xc-parent.iml" filepath="$PROJECT_DIR$/xc-parent.iml" />
+    </modules>
+  </component>
+</project>
