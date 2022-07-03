@@ -32,7 +32,7 @@ public class ContentCodeGenerator {
 
 	// TODO 默认生成entity，需要生成DTO修改此变量
 	// 一般情况下要先生成 DTO类 然后修改此参数再生成 PO 类。
-	private static final Boolean IS_DTO = false;
+	private static final Boolean IS_DTO = true;
 
 	public static void main(String[] args) {
 		// 代码生成器

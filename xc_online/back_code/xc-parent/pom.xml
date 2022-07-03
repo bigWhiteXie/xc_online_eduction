@@ -10,6 +10,7 @@
         <module>xc-api</module>
         <module>xc-mp-generator</module>
         <module>xc-content-service</module>
+        <module>xc-gateway-server</module>
     </modules>
 
     <!-- 继承 Spring Boot 父工程 -->
