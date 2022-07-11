@@ -10,12 +10,13 @@
         <module name="xc-common" />
         <module name="xc-content-service" />
         <module name="xc-api" />
-        <module name="xc-gateway-server" />
         <module name="xc-system-service" />
         <module name="xc-mp-generator" />
+        <module name="xc-gateway-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
+      <module name="farming" target="1.8" />
       <module name="xc-api" target="1.8" />
       <module name="xc-common" target="1.8" />
       <module name="xc-content-service" target="1.8" />

@@ -11,7 +11,7 @@ import javax.annotation.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2022-07-11T11:33:12+0800",
+    date = "2022-07-11T11:44:34+0800",
     comments = "version: 1.3.0.Final, compiler: javac, environment: Java 1.8.0_271 (Oracle Corporation)"
 )
 public class CourseBaseConvertImpl implements CourseBaseConvert {
