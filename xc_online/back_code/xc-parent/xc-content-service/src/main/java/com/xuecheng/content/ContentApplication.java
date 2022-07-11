@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @EnableSwagger2Doc
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.xuecheng.content","com.xuecheng.common.exception"})
 @EnableDiscoveryClient
 public class ContentApplication {
 

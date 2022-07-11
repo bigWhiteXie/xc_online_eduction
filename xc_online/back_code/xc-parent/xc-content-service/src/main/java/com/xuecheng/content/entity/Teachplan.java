@@ -1,7 +1,9 @@
 package com.xuecheng.content.entity;
 
 import com.baomidou.mybatisplus.annotation.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -15,6 +17,8 @@ import java.time.LocalDateTime;
  */
 @Data
 @TableName("teachplan")
+@AllArgsConstructor
+@NoArgsConstructor
 public class Teachplan implements Serializable {
 
     private static final long serialVersionUID = 1L;

@@ -1,0 +1,112 @@
+{
+  "properties" : {
+    "charge" : {
+      "type" : "keyword"
+    },
+    "description" : {
+      "analyzer" : "ik_max_word",
+      "search_analyzer" : "ik_smart",
+      "type" : "text"
+    },
+    "start_time" : {
+      "type" : "date"
+    },
+    "end_time" : {
+      "type" : "date"
+    },
+    "valid" : {
+      "type" : "keyword"
+    },
+    "grade" : {
+      "type" : "keyword"
+    },
+    "id" : {
+      "type" : "keyword"
+    },
+    "mt" : {
+      "type" : "keyword"
+    },
+    "st" : {
+      "type" : "keyword"
+    },
+    "name" : {
+      "analyzer" : "ik_max_word",
+      "search_analyzer" : "ik_smart",
+      "type" : "text"
+    },
+    "pic" : {
+      "index" : false,
+      "type" : "keyword"
+    },
+    "price" : {
+      "type": "scaled_float",
+      "scaling_factor": 100
+    },
+    "price_old" : {
+      "type": "scaled_float",
+      "scaling_factor": 100
+    },
+    "create_date" : {
+      "type" : "date"
+    },
+    "change_date" : {
+      "type" : "date"
+    },
+    "qq" : {
+      "index" : false,
+      "type" : "keyword"
+    },
+    "studymodel" : {
+      "type" : "keyword"
+    },
+    "teachmode" : {
+      "type" : "keyword"
+    },
+    "teachplan" : {
+      "analyzer" : "ik_max_word",
+      "search_analyzer" : "ik_smart",
+      "type" : "text"
+    },
+    "users" : {
+      "index" : false,
+      "type" : "text"
+    },
+    "status" : {
+      "type" : "byte"
+    },
+    "is_latest" : {
+      "type" : "byte"
+    },
+    "is_pub" : {
+      "type" : "byte"
+    },
+    "remark" : {
+      "index" : false,
+      "type" : "text"
+    },
+    "course_id" : {
+      "type" : "keyword"
+    },
+    "company_id" : {
+      "index" : false,
+      "type" : "keyword"
+    },
+    "company_name" : {
+      "type" : "text"
+    },
+    "tags" : {
+      "index" : false,
+      "type" : "text"
+    },
+    "market" : {
+      "index" : false,
+      "type" : "text"
+    },
+    "learners" : {
+      "type" : "long"
+    },
+    "comment_num" : {
+      "type" : "long"
+    }
+  }
+}

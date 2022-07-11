@@ -6,6 +6,7 @@ import lombok.Data;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.List;
 
 /**
  * <p>
@@ -67,5 +68,7 @@ public class TeachplanDTO implements Serializable {
     @ApiModelProperty(value = "修改时间")
     private LocalDateTime changeDate;
 
+    @ApiModelProperty(value = "课程计划子级树形结构集合")
+    private List<TeachplanDTO> teachPlanTreeNodes;
 
 }

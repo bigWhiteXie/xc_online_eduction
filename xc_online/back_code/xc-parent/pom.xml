@@ -11,6 +11,7 @@
         <module>xc-mp-generator</module>
         <module>xc-content-service</module>
         <module>xc-gateway-server</module>
+        <module>xc-system-service</module>
     </modules>
 
     <!-- 继承 Spring Boot 父工程 -->
@@ -186,6 +187,12 @@
                 <groupId>com.alibaba.csp</groupId>
                 <artifactId>sentinel-datasource-apollo</artifactId>
                 <version>1.6.2</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.qiniu</groupId>
+                <artifactId>qiniu-java-sdk</artifactId>
+                <version>7.2.11</version>
             </dependency>
 
         </dependencies>

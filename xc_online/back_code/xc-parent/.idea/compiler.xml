@@ -2,24 +2,37 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="xc-api" />
         <module name="xc-common" />
+        <module name="xc-content-service" />
+        <module name="xc-api" />
+        <module name="xc-gateway-server" />
+        <module name="xc-system-service" />
+        <module name="xc-mp-generator" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="8">
       <module name="xc-api" target="1.8" />
       <module name="xc-common" target="1.8" />
+      <module name="xc-content-service" target="1.8" />
+      <module name="xc-gateway-server" target="1.8" />
+      <module name="xc-mp-generator" target="1.8" />
       <module name="xc-parent" target="1.8" />
+      <module name="xc-system-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="xc-api" options="-parameters" />
-      <module name="xc-common" options="-parameters -bootclasspath &quot;C:/Program Files/Java/jdk-11.0.1/lib/rt.jar,C:/Program Files/Java/jdk-11.0.1/lib/jce.jar&quot;" />
+      <module name="xc-common" options="-parameters" />
+      <module name="xc-content-service" options="-parameters" />
+      <module name="xc-gateway-server" options="-parameters" />
+      <module name="xc-mp-generator" options="-parameters" />
+      <module name="xc-system-service" options="-parameters" />
     </option>
   </component>
 </project>

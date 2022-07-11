@@ -37,6 +37,7 @@ public enum ContentErrorCode implements ErrorCode {
     E_120015(120015, "课程审核状态异常"),
     E_120016(120016, "审核的状态是能为：审核通过或审核未通过"),
     E_120017(120017, "操作课程数据失败"),
+    E_120018(120018, "参数校验失败"),
 
 
 
@@ -81,8 +82,10 @@ public enum ContentErrorCode implements ErrorCode {
     E_1200503(1200503, "课程教师信息不存在"),
 
     E_120601(120601, "获得上传凭证失败，请稍后再试"),
-    ;
 
+    E_120701(120701, "该记录并不属于该公司"),
+
+    E_120025(120025,"服务请求失败");
     private int code;
     private String desc;
 

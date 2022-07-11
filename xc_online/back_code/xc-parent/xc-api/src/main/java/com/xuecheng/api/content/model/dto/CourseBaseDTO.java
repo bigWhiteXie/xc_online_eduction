@@ -5,6 +5,7 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 /**
@@ -73,6 +74,12 @@ public class CourseBaseDTO implements Serializable {
     @ApiModelProperty(value = "审核次数")
     private Integer auditNums;
 
+    @ApiModelProperty(value = "审核时间")
+    private String auditDate;
+
+    @ApiModelProperty(value = "修改时间")
+    private String changeDate;
+
 
     @ApiModelProperty(value = "是否删除：1为未删除，0为删除")
     private Integer status;
@@ -80,5 +87,17 @@ public class CourseBaseDTO implements Serializable {
     @ApiModelProperty(value = "课程发布标识")
     private Long coursePubId;
 
+    //添加营销信息的属性
+    @ApiModelProperty(value = "收费规则，对应数据字典", required = true)
+    private String charge;
+
+    @ApiModelProperty(value = "价格")
+    private BigDecimal price;
+
+    @ApiModelProperty(value = "报名人数")
+    private Integer learners;
+
+    @ApiModelProperty(value = "任务数")
+    private Integer subsectionNum;
 
 }

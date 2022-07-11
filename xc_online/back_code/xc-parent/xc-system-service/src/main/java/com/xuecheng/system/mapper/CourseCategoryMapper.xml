@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xuecheng.system.mapper.CourseCategoryMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="treeNodeResultMap" type="com.xuecheng.system.entity.ext.CourseCategoryNode">
+        <!-- 一级数据映射 -->
+        <id     column="one_id"        property="id" />
+        <result column="one_name"      property="name" />
+        <result column="one_label"     property="label" />
+        <result column="one_parentid"  property="parentid" />
+        <result column="one_orderby"   property="orderby" />
+        <!-- 一级中包含多个二级数据：二级的集合数据 -->
+        <collection property="childrenTreeNodes" ofType="com.xuecheng.system.entity.ext.CourseCategoryNode">
+            <!-- 二级数据映射 -->
+            <id     column="two_id"        property="id" />
+            <result column="two_name"      property="name" />
+            <result column="two_label"     property="label" />
+            <result column="two_parentid"  property="parentid" />
+            <result column="two_orderby"   property="orderby" />
+            <collection property="childrenTreeNodes" ofType="com.xuecheng.system.entity.ext.CourseCategoryNode">
+                <!-- 三级数据映射 -->
+                <id     column="three_id"        property="id" />
+                <result column="three_name"      property="name" />
+                <result column="three_label"     property="label" />
+                <result column="three_parentid"  property="parentid" />
+                <result column="three_orderby"   property="orderby" />
+            </collection>
+        </collection>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, label, parentid, is_show, orderby, is_leaf
+    </sql>
+
+    <select id="selectTreeNodes" resultMap="treeNodeResultMap" >
+        select
+            one.id            one_id,
+            one.name          one_name,
+            one.parentid      one_parentid,
+            one.orderby       one_orderby,
+            one.label         one_label,
+            two.id            two_id,
+            two.name          two_name,
+            two.parentid      two_parentid,
+            two.orderby       two_orderby,
+            two.label         two_label,
+            three.id            three_id,
+            three.name          three_name,
+            three.parentid      three_parentid,
+            three.orderby       three_orderby,
+            three.label         three_label
+        from course_category one
+                 inner join course_category two on one.id = two.parentid
+                 inner join course_category three on two.id = three.parentid
+        where one.parentid = 0
+          and one.is_show = 1
+          and two.is_show = 1
+          and three.is_show = 1
+        order by two.orderby,
+                 three.orderby
+    </select>
+
+</mapper>

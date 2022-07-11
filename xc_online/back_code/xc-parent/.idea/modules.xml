@@ -4,7 +4,11 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/xc-api/xc-api.iml" filepath="$PROJECT_DIR$/xc-api/xc-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/xc-common/xc-common.iml" filepath="$PROJECT_DIR$/xc-common/xc-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xc-content-service/xc-content-service.iml" filepath="$PROJECT_DIR$/xc-content-service/xc-content-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xc-gateway-server/xc-gateway-server.iml" filepath="$PROJECT_DIR$/xc-gateway-server/xc-gateway-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xc-mp-generator/xc-mp-generator.iml" filepath="$PROJECT_DIR$/xc-mp-generator/xc-mp-generator.iml" />
       <module fileurl="file://$PROJECT_DIR$/xc-parent.iml" filepath="$PROJECT_DIR$/xc-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xc-system-service/xc-system-service.iml" filepath="$PROJECT_DIR$/xc-system-service/xc-system-service.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,3 @@
+com\xuecheng\gateway\config\CorsConfig.class
+com\xuecheng\gateway\filter\AuthFilter.class
+com\xuecheng\gateway\GatewayServer.class

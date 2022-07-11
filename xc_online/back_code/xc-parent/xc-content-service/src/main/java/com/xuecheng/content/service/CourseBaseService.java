@@ -25,4 +25,12 @@ public interface CourseBaseService extends IService<CourseBase> {
 
 
     PageVO<CourseBaseDTO> queryCourseBasePage(QueryCourseBaseModel queryModel, PageRequestParams pageRequestParams);
+
+    CourseBaseDTO createCourseBaseService(CourseBaseDTO dto);
+
+    CourseBaseDTO getCourseBaseById(Long courseBaseId);
+
+    CourseBaseDTO modifyCourseBase(CourseBaseDTO dto);
+
+    Boolean removeCourseBase(Long courseBaseId);
 }

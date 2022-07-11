@@ -140,6 +140,7 @@ public class CourseBase implements Serializable {
     /**
      * 是否删除：1为未删除，0为删除
      */
+
     private Integer status;
 
     /**

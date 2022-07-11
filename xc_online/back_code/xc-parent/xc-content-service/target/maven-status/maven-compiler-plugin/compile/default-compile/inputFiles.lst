@@ -9,6 +9,7 @@ D:\javaProject\javaProject\xc_online\back_code\xc-parent\xc-content-service\src\
 D:\javaProject\javaProject\xc_online\back_code\xc-parent\xc-content-service\src\main\java\com\xuecheng\content\entity\CourseMarket.java
 D:\javaProject\javaProject\xc_online\back_code\xc-parent\xc-content-service\src\main\java\com\xuecheng\content\mapper\CoursePubMapper.java
 D:\javaProject\javaProject\xc_online\back_code\xc-parent\xc-content-service\src\main\java\com\xuecheng\content\mapper\CourseTeacherMapper.java
+D:\javaProject\javaProject\xc_online\back_code\xc-parent\xc-content-service\src\main\java\com\xuecheng\content\convert\CourseBaseConvert.java
 D:\javaProject\javaProject\xc_online\back_code\xc-parent\xc-content-service\src\main\java\com\xuecheng\content\service\CourseTeacherService.java
 D:\javaProject\javaProject\xc_online\back_code\xc-parent\xc-content-service\src\main\java\com\xuecheng\content\service\impl\CourseMarketServiceImpl.java
 D:\javaProject\javaProject\xc_online\back_code\xc-parent\xc-content-service\src\main\java\com\xuecheng\content\controller\CoursePubController.java
@@ -29,6 +30,7 @@ D:\javaProject\javaProject\xc_online\back_code\xc-parent\xc-content-service\src\
 D:\javaProject\javaProject\xc_online\back_code\xc-parent\xc-content-service\src\main\java\com\xuecheng\content\controller\TeachplanController.java
 D:\javaProject\javaProject\xc_online\back_code\xc-parent\xc-content-service\src\main\java\com\xuecheng\content\common\util\QiniuUtils.java
 D:\javaProject\javaProject\xc_online\back_code\xc-parent\xc-content-service\src\main\java\com\xuecheng\content\service\TeachplanMediaService.java
+D:\javaProject\javaProject\xc_online\back_code\xc-parent\xc-content-service\src\main\java\com\xuecheng\content\controller\GlobalExceptionHandler.java
 D:\javaProject\javaProject\xc_online\back_code\xc-parent\xc-content-service\src\main\java\com\xuecheng\content\mapper\TeachplanMapper.java
 D:\javaProject\javaProject\xc_online\back_code\xc-parent\xc-content-service\src\main\java\com\xuecheng\content\service\impl\TeachplanMediaServiceImpl.java
 D:\javaProject\javaProject\xc_online\back_code\xc-parent\xc-content-service\src\main\java\com\xuecheng\content\service\impl\CourseBaseServiceImpl.java
