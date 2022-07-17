@@ -1,9 +1,9 @@
-[xc-system-service] 2022-07-03 23:33:29,715 INFO [main][LocalConfigInfoProcessor.java:212] - LOCAL_SNAPSHOT_PATH:C:\Users\26072\nacos\config
-[xc-system-service] 2022-07-03 23:33:29,857 DEBUG [main][NacosRestTemplate.java:476] - HTTP method: GET, url: http://117.50.181.29:8845/nacos/v1/cs/configs?dataId=mp-config.properties&tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac&group=xc-group, body: null
-[xc-system-service] 2022-07-03 23:33:29,858 DEBUG [main][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@ff6077]
-[xc-system-service] 2022-07-03 23:33:29,871 INFO [main][Limiter.java:54] - limitTime:5.0
-[xc-system-service] 2022-07-03 23:33:30,006 INFO [main][JvmUtil.java:49] - isMultiInstance:false
-[xc-system-service] 2022-07-03 23:33:30,008 DEBUG [main][NacosPropertySourceBuilder.java:93] - Loading nacos data, dataId: 'mp-config.properties', group: 'xc-group', data: #驼峰下划线转换
+[xc-system-service] 2022-07-12 22:59:36,111 INFO [main][LocalConfigInfoProcessor.java:212] - LOCAL_SNAPSHOT_PATH:C:\Users\26072\nacos\config
+[xc-system-service] 2022-07-12 22:59:36,266 DEBUG [main][NacosRestTemplate.java:476] - HTTP method: GET, url: http://117.50.181.29:8845/nacos/v1/cs/configs?dataId=mp-config.properties&tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac&group=xc-group, body: null
+[xc-system-service] 2022-07-12 22:59:36,268 DEBUG [main][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@64f555e7]
+[xc-system-service] 2022-07-12 22:59:36,281 INFO [main][Limiter.java:54] - limitTime:5.0
+[xc-system-service] 2022-07-12 22:59:36,401 INFO [main][JvmUtil.java:49] - isMultiInstance:false
+[xc-system-service] 2022-07-12 22:59:36,402 DEBUG [main][NacosPropertySourceBuilder.java:93] - Loading nacos data, dataId: 'mp-config.properties', group: 'xc-group', data: #驼峰下划线转换
 mybatis-plus.global-config.db-column-underline = true
 #实体扫描，多个package用逗号或者分号分隔
 mybatis-plus.typeAliasesPackage = com.xuecheng.*.entity
@@ -17,18 +17,18 @@ mybatis-plus.mapper-locations = classpath:com.xuecheng.*.mapper/*.xml
 mybatis-plus.global-config.id-type = 0
 #刷新mapper 调试神器
 mybatis-plus.global-config.refresh-mapper = true
-[xc-system-service] 2022-07-03 23:33:30,019 DEBUG [main][NacosRestTemplate.java:476] - HTTP method: GET, url: http://117.50.181.29:8845/nacos/v1/cs/configs?dataId=spring-http-config.properties&tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac&group=xc-group, body: null
-[xc-system-service] 2022-07-03 23:33:30,019 DEBUG [main][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@ff6077]
-[xc-system-service] 2022-07-03 23:33:30,052 DEBUG [main][NacosPropertySourceBuilder.java:93] - Loading nacos data, dataId: 'spring-http-config.properties', group: 'xc-group', data: #srpingboot http 配置信息
+[xc-system-service] 2022-07-12 22:59:36,414 DEBUG [main][NacosRestTemplate.java:476] - HTTP method: GET, url: http://117.50.181.29:8845/nacos/v1/cs/configs?dataId=spring-http-config.properties&tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac&group=xc-group, body: null
+[xc-system-service] 2022-07-12 22:59:36,414 DEBUG [main][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@64f555e7]
+[xc-system-service] 2022-07-12 22:59:36,453 DEBUG [main][NacosPropertySourceBuilder.java:93] - Loading nacos data, dataId: 'spring-http-config.properties', group: 'xc-group', data: #srpingboot http 配置信息
 spring.http.encoding.enabled = true
 spring.http.encoding.charset = UTF-8
 spring.http.encoding.force = true
 server.use-forward-headers = true
 server.servlet.context-path = /
 server.port=8888
-[xc-system-service] 2022-07-03 23:33:30,053 DEBUG [main][NacosRestTemplate.java:476] - HTTP method: GET, url: http://117.50.181.29:8845/nacos/v1/cs/configs?dataId=spring-druid-config.properties&tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac&group=xc-group, body: null
-[xc-system-service] 2022-07-03 23:33:30,053 DEBUG [main][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@ff6077]
-[xc-system-service] 2022-07-03 23:33:30,094 DEBUG [main][NacosPropertySourceBuilder.java:93] - Loading nacos data, dataId: 'spring-druid-config.properties', group: 'xc-group', data: #spring druid 配置信息
+[xc-system-service] 2022-07-12 22:59:36,454 DEBUG [main][NacosRestTemplate.java:476] - HTTP method: GET, url: http://117.50.181.29:8845/nacos/v1/cs/configs?dataId=spring-druid-config.properties&tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac&group=xc-group, body: null
+[xc-system-service] 2022-07-12 22:59:36,454 DEBUG [main][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@64f555e7]
+[xc-system-service] 2022-07-12 22:59:36,485 DEBUG [main][NacosPropertySourceBuilder.java:93] - Loading nacos data, dataId: 'spring-druid-config.properties', group: 'xc-group', data: #spring druid 配置信息
 spring.datasource.driver-class-name = com.mysql.jdbc.Driver
 spring.datasource.password = j3391111
 spring.datasource.username = root
@@ -42,134 +42,134 @@ spring.datasource.druid.max-wait = 60000
 spring.datasource.druid.max-pool-prepared-statement-per-connection-size = 20
 #连接池中最大激活连接数
 spring.datasource.druid.max-active = 20
-[xc-system-service] 2022-07-03 23:33:30,098 DEBUG [main][NacosRestTemplate.java:476] - HTTP method: GET, url: http://117.50.181.29:8845/nacos/v1/cs/configs?dataId=system-service&tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac&group=xc-group, body: null
-[xc-system-service] 2022-07-03 23:33:30,098 DEBUG [main][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@ff6077]
-[xc-system-service] 2022-07-03 23:33:30,139 WARN [main][NacosPropertySourceBuilder.java:87] - Ignore the empty nacos configuration and get it based on dataId[system-service] & group[xc-group]
-[xc-system-service] 2022-07-03 23:33:30,141 DEBUG [main][NacosRestTemplate.java:476] - HTTP method: GET, url: http://117.50.181.29:8845/nacos/v1/cs/configs?dataId=system-service.properties&tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac&group=xc-group, body: null
-[xc-system-service] 2022-07-03 23:33:30,141 DEBUG [main][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@ff6077]
-[xc-system-service] 2022-07-03 23:33:30,179 WARN [main][NacosPropertySourceBuilder.java:87] - Ignore the empty nacos configuration and get it based on dataId[system-service.properties] & group[xc-group]
-[xc-system-service] 2022-07-03 23:33:30,180 DEBUG [main][NacosRestTemplate.java:476] - HTTP method: GET, url: http://117.50.181.29:8845/nacos/v1/cs/configs?dataId=system-service-dev.properties&tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac&group=xc-group, body: null
-[xc-system-service] 2022-07-03 23:33:30,180 DEBUG [main][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@ff6077]
-[xc-system-service] 2022-07-03 23:33:30,220 DEBUG [main][NacosPropertySourceBuilder.java:93] - Loading nacos data, dataId: 'system-service-dev.properties', group: 'xc-group', data: #srpingboot http 配置信息
+[xc-system-service] 2022-07-12 22:59:36,487 DEBUG [main][NacosRestTemplate.java:476] - HTTP method: GET, url: http://117.50.181.29:8845/nacos/v1/cs/configs?dataId=system-service&tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac&group=xc-group, body: null
+[xc-system-service] 2022-07-12 22:59:36,487 DEBUG [main][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@64f555e7]
+[xc-system-service] 2022-07-12 22:59:36,522 WARN [main][NacosPropertySourceBuilder.java:87] - Ignore the empty nacos configuration and get it based on dataId[system-service] & group[xc-group]
+[xc-system-service] 2022-07-12 22:59:36,523 DEBUG [main][NacosRestTemplate.java:476] - HTTP method: GET, url: http://117.50.181.29:8845/nacos/v1/cs/configs?dataId=system-service.properties&tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac&group=xc-group, body: null
+[xc-system-service] 2022-07-12 22:59:36,523 DEBUG [main][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@64f555e7]
+[xc-system-service] 2022-07-12 22:59:36,570 WARN [main][NacosPropertySourceBuilder.java:87] - Ignore the empty nacos configuration and get it based on dataId[system-service.properties] & group[xc-group]
+[xc-system-service] 2022-07-12 22:59:36,571 DEBUG [main][NacosRestTemplate.java:476] - HTTP method: GET, url: http://117.50.181.29:8845/nacos/v1/cs/configs?dataId=system-service-dev.properties&tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac&group=xc-group, body: null
+[xc-system-service] 2022-07-12 22:59:36,571 DEBUG [main][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@64f555e7]
+[xc-system-service] 2022-07-12 22:59:36,603 DEBUG [main][NacosPropertySourceBuilder.java:93] - Loading nacos data, dataId: 'system-service-dev.properties', group: 'xc-group', data: #srpingboot http 配置信息
 server.servlet.context-path = /system
 server.port=63110
 
 #srping druid 配置信息
 spring.datasource.url = jdbc:mysql://117.50.181.29:3306/xc_system?userUnicode=true&useSSL=false&characterEncoding=utf8
-[xc-system-service] 2022-07-03 23:33:30,221 INFO [main][PropertySourceBootstrapConfiguration.java:112] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-system-service-dev.properties,xc-group'}, BootstrapPropertySource {name='bootstrapProperties-system-service.properties,xc-group'}, BootstrapPropertySource {name='bootstrapProperties-system-service,xc-group'}, BootstrapPropertySource {name='bootstrapProperties-spring-druid-config.properties,xc-group'}, BootstrapPropertySource {name='bootstrapProperties-spring-http-config.properties,xc-group'}, BootstrapPropertySource {name='bootstrapProperties-mp-config.properties,xc-group'}]
-[xc-system-service] 2022-07-03 23:33:30,258 INFO [main][SpringApplication.java:655] - The following profiles are active: dev
-[xc-system-service] 2022-07-03 23:33:30,857 DEBUG [main][LogFactory.java:105] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-[xc-system-service] 2022-07-03 23:33:30,919 INFO [main][GenericScope.java:295] - BeanFactory id=c3498111-8366-38f6-99bb-ce383bec230e
-[xc-system-service] 2022-07-03 23:33:31,193 INFO [main][DruidDataSourceAutoConfigure.java:56] - Init DruidDataSource
-[xc-system-service] 2022-07-03 23:33:33,689 INFO [main][DruidDataSource.java:1010] - {dataSource-1} inited
-[xc-system-service] 2022-07-03 23:33:33,723 DEBUG [main][Logger.java:49] - Registered plugin: 'AbstractSqlParserHandler(sqlParserList=null, sqlParserFilter=null)'
-[xc-system-service] 2022-07-03 23:33:33,724 DEBUG [main][Logger.java:49] - Property 'mapperLocations' was not specified.
-[xc-system-service] 2022-07-03 23:33:34,122 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.selectTreeNodes
-[xc-system-service] 2022-07-03 23:33:34,142 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.insert
-[xc-system-service] 2022-07-03 23:33:34,146 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.delete
-[xc-system-service] 2022-07-03 23:33:34,148 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.deleteByMap
-[xc-system-service] 2022-07-03 23:33:34,151 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.deleteById
-[xc-system-service] 2022-07-03 23:33:34,152 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.deleteBatchIds
-[xc-system-service] 2022-07-03 23:33:34,154 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.update
-[xc-system-service] 2022-07-03 23:33:34,155 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.updateById
-[xc-system-service] 2022-07-03 23:33:34,156 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.selectById
-[xc-system-service] 2022-07-03 23:33:34,157 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.selectBatchIds
-[xc-system-service] 2022-07-03 23:33:34,158 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.selectByMap
-[xc-system-service] 2022-07-03 23:33:34,159 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.selectOne
-[xc-system-service] 2022-07-03 23:33:34,161 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.selectCount
-[xc-system-service] 2022-07-03 23:33:34,162 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.selectMaps
-[xc-system-service] 2022-07-03 23:33:34,163 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.selectMapsPage
-[xc-system-service] 2022-07-03 23:33:34,164 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.selectObjs
-[xc-system-service] 2022-07-03 23:33:34,165 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.selectList
-[xc-system-service] 2022-07-03 23:33:34,166 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.selectPage
-[xc-system-service] 2022-07-03 23:33:34,195 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.DictionaryMapper.insert
-[xc-system-service] 2022-07-03 23:33:34,196 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.DictionaryMapper.delete
-[xc-system-service] 2022-07-03 23:33:34,198 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.DictionaryMapper.deleteByMap
-[xc-system-service] 2022-07-03 23:33:34,199 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.DictionaryMapper.deleteById
-[xc-system-service] 2022-07-03 23:33:34,200 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.DictionaryMapper.deleteBatchIds
-[xc-system-service] 2022-07-03 23:33:34,201 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.DictionaryMapper.update
-[xc-system-service] 2022-07-03 23:33:34,202 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.DictionaryMapper.updateById
-[xc-system-service] 2022-07-03 23:33:34,202 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.DictionaryMapper.selectById
-[xc-system-service] 2022-07-03 23:33:34,203 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.DictionaryMapper.selectBatchIds
-[xc-system-service] 2022-07-03 23:33:34,204 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.DictionaryMapper.selectByMap
-[xc-system-service] 2022-07-03 23:33:34,205 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.DictionaryMapper.selectOne
-[xc-system-service] 2022-07-03 23:33:34,206 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.DictionaryMapper.selectCount
-[xc-system-service] 2022-07-03 23:33:34,207 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.DictionaryMapper.selectMaps
-[xc-system-service] 2022-07-03 23:33:34,208 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.DictionaryMapper.selectMapsPage
-[xc-system-service] 2022-07-03 23:33:34,208 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.DictionaryMapper.selectObjs
-[xc-system-service] 2022-07-03 23:33:34,209 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.DictionaryMapper.selectList
-[xc-system-service] 2022-07-03 23:33:34,211 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.DictionaryMapper.selectPage
-[xc-system-service] 2022-07-03 23:33:34,667 INFO [main][PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-[xc-system-service] 2022-07-03 23:33:34,823 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
-[xc-system-service] 2022-07-03 23:33:34,824 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-[xc-system-service] 2022-07-03 23:33:34,830 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
-[xc-system-service] 2022-07-03 23:33:34,830 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-[xc-system-service] 2022-07-03 23:33:34,859 DEBUG [main][ResourceBundleMessageInterpolator.java:172] - Loaded expression factory via original TCCL
-[xc-system-service] 2022-07-03 23:33:34,866 DEBUG [main][AbstractConfigurationImpl.java:171] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
-[xc-system-service] 2022-07-03 23:33:34,867 DEBUG [main][AbstractConfigurationImpl.java:203] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
-[xc-system-service] 2022-07-03 23:33:34,867 DEBUG [main][AbstractConfigurationImpl.java:217] - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
-[xc-system-service] 2022-07-03 23:33:34,869 DEBUG [main][ValidationXmlParser.java:120] - Trying to load META-INF/validation.xml for XML based Validator configuration.
-[xc-system-service] 2022-07-03 23:33:34,869 DEBUG [main][ResourceLoaderHelper.java:53] - Trying to load META-INF/validation.xml via user class loader
-[xc-system-service] 2022-07-03 23:33:34,869 DEBUG [main][ResourceLoaderHelper.java:60] - Trying to load META-INF/validation.xml via TCCL
-[xc-system-service] 2022-07-03 23:33:34,870 DEBUG [main][ResourceLoaderHelper.java:66] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
-[xc-system-service] 2022-07-03 23:33:34,870 DEBUG [main][ValidationXmlParser.java:127] - No META-INF/validation.xml found. Using annotation based configuration only.
-[xc-system-service] 2022-07-03 23:33:34,870 DEBUG [main][TraversableResolvers.java:60] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
-[xc-system-service] 2022-07-03 23:33:34,872 DEBUG [main][ValidatorFactoryConfigurationHelper.java:300] - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
-[xc-system-service] 2022-07-03 23:33:34,872 DEBUG [main][ValidatorFactoryConfigurationHelper.java:375] - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
-[xc-system-service] 2022-07-03 23:33:34,873 DEBUG [main][ValidatorFactoryConfigurationHelper.java:376] - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
-[xc-system-service] 2022-07-03 23:33:34,873 DEBUG [main][ValidatorFactoryConfigurationHelper.java:377] - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
-[xc-system-service] 2022-07-03 23:33:34,873 DEBUG [main][ValidatorFactoryConfigurationHelper.java:378] - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
-[xc-system-service] 2022-07-03 23:33:34,873 DEBUG [main][ValidatorFactoryConfigurationHelper.java:379] - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
-[xc-system-service] 2022-07-03 23:33:34,996 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
-[xc-system-service] 2022-07-03 23:33:35,530 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
-[xc-system-service] 2022-07-03 23:33:35,759 WARN [main][FreeMarkerAutoConfiguration.java:67] - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-[xc-system-service] 2022-07-03 23:33:36,191 INFO [main][InitUtils.java:65] - initializer namespace from System Property :null
-[xc-system-service] 2022-07-03 23:33:36,194 INFO [main][InitUtils.java:74] - initializer namespace from System Environment :null
-[xc-system-service] 2022-07-03 23:33:36,195 INFO [main][InitUtils.java:84] - initializer namespace from System Property :null
-[xc-system-service] 2022-07-03 23:33:36,203 DEBUG [com.alibaba.nacos.client.naming.updater][NamingProxy.java:195] - server list provided by user: [117.50.181.29:8845]
-[xc-system-service] 2022-07-03 23:33:36,203 DEBUG [main][NamingProxy.java:195] - server list provided by user: [117.50.181.29:8845]
-[xc-system-service] 2022-07-03 23:33:36,211 DEBUG [com.alibaba.nacos.naming.failover][FailoverReactor.java:147] - failover switch is not found, failover00-00---000-VIPSRV_FAILOVER_SWITCH-000---00-00
-[xc-system-service] 2022-07-03 23:33:36,226 DEBUG [main][HostReactor.java:302] - failover-mode: false
-[xc-system-service] 2022-07-03 23:33:36,228 DEBUG [main][NacosRestTemplate.java:476] - HTTP method: GET, url: http://117.50.181.29:8845/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac&clientIP=192.168.43.88&serviceName=xc-group%40%40system-service&udpPort=63030&clusters=DEFAULT, body: {}
-[xc-system-service] 2022-07-03 23:33:36,406 INFO [main][DocumentationPluginsBootstrapper.java:160] - Context refreshed
-[xc-system-service] 2022-07-03 23:33:36,422 INFO [main][DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
-[xc-system-service] 2022-07-03 23:33:36,467 INFO [main][ApiListingReferenceScanner.java:41] - Scanning for api listing references
-[xc-system-service] 2022-07-03 23:33:36,591 INFO [main][StartupInfoLogger.java:61] - Started CourseCategoryMapperTest in 7.761 seconds (JVM running for 8.549)
-[xc-system-service] 2022-07-03 23:33:36,594 INFO [main][ClientWorker.java:239] - [fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac] [subscribe] system-service.properties+xc-group+3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac
-[xc-system-service] 2022-07-03 23:33:36,595 INFO [main][CacheData.java:93] - [fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac] [add-listener] ok, tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac, dataId=system-service.properties, group=xc-group, cnt=1
-[xc-system-service] 2022-07-03 23:33:36,595 INFO [main][ClientWorker.java:239] - [fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac] [subscribe] system-service+xc-group+3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac
-[xc-system-service] 2022-07-03 23:33:36,595 INFO [main][CacheData.java:93] - [fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac] [add-listener] ok, tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac, dataId=system-service, group=xc-group, cnt=1
-[xc-system-service] 2022-07-03 23:33:36,596 INFO [main][ClientWorker.java:239] - [fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac] [subscribe] system-service-dev.properties+xc-group+3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac
-[xc-system-service] 2022-07-03 23:33:36,596 INFO [main][CacheData.java:93] - [fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac] [add-listener] ok, tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac, dataId=system-service-dev.properties, group=xc-group, cnt=1
-[xc-system-service] 2022-07-03 23:33:36,597 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac][NacosRestTemplate.java:476] - HTTP method: POST, url: http://117.50.181.29:8845/nacos/v1/cs/configs/listener, body: {Listening-Configs=system-service-dev.propertiesxc-groupf31127ff78ea4e609cc3b54884d8e97c3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deacsystem-service.propertiesxc-group3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deacsystem-servicexc-group3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac, tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac}
-[xc-system-service] 2022-07-03 23:33:36,599 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@ff6077]
-[xc-system-service] 2022-07-03 23:33:36,753 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac][NacosRestTemplate.java:476] - HTTP method: POST, url: http://117.50.181.29:8845/nacos/v1/cs/configs/listener, body: {Listening-Configs=system-service-dev.propertiesxc-groupf31127ff78ea4e609cc3b54884d8e97c3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deacsystem-service.propertiesxc-group3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deacsystem-servicexc-group3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac, tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac}
-[xc-system-service] 2022-07-03 23:33:36,754 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@ff6077]
-[xc-system-service] 2022-07-03 23:33:36,847 DEBUG [main][BaseJdbcLogger.java:137] - ==>  Preparing: select one.id one_id, one.name one_name, one.parentid one_parentid, one.orderby one_orderby, one.label one_label, two.id two_id, two.name two_name, two.parentid two_parentid, two.orderby two_orderby, two.label two_label, three.id three_id, three.name three_name, three.parentid three_parentid, three.orderby three_orderby, three.label three_label from course_category one inner join course_category two on one.id = two.parentid inner join course_category three on two.id = three.parentid where one.parentid = 0 and one.is_show = 1 and two.is_show = 1 and three.is_show = 1 order by two.orderby, three.orderby
-[xc-system-service] 2022-07-03 23:33:36,862 DEBUG [main][BaseJdbcLogger.java:137] - ==> Parameters: 
-[xc-system-service] 2022-07-03 23:33:36,978 DEBUG [main][BaseJdbcLogger.java:137] - <==      Total: 128
-[xc-system-service] 2022-07-03 23:33:36,980 DEBUG [main][PreparedStatementPool.java:129] - stmt enter cache
-[xc-system-service] 2022-07-03 23:33:37,003 WARN [Thread-13][NotifyCenter.java:145] - [NotifyCenter] Start destroying Publisher
-[xc-system-service] 2022-07-03 23:33:37,003 WARN [Thread-2][HttpClientBeanHolder.java:108] - [HttpClientBeanHolder] Start destroying common HttpClient
-[xc-system-service] 2022-07-03 23:33:37,003 WARN [Thread-13][NotifyCenter.java:162] - [NotifyCenter] Destruction of the end
-[xc-system-service] 2022-07-03 23:33:37,004 WARN [Thread-2][HttpClientBeanHolder.java:114] - [HttpClientBeanHolder] Destruction of the end
-[xc-system-service] 2022-07-03 23:33:37,005 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
-[xc-system-service] 2022-07-03 23:33:37,006 INFO [SpringContextShutdownHook][BeatReactor.java:147] - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
-[xc-system-service] 2022-07-03 23:33:37,007 INFO [SpringContextShutdownHook][BeatReactor.java:149] - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
-[xc-system-service] 2022-07-03 23:33:37,007 INFO [SpringContextShutdownHook][HostReactor.java:409] - com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
-[xc-system-service] 2022-07-03 23:33:37,417 DEBUG [com.alibaba.nacos.client.naming.updater][NacosRestTemplate.java:476] - HTTP method: GET, url: http://117.50.181.29:8845/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac&clientIP=192.168.43.88&serviceName=xc-group%40%40system-service&udpPort=63030&clusters=DEFAULT, body: {}
-[xc-system-service] 2022-07-03 23:33:37,508 INFO [SpringContextShutdownHook][PushReceiver.java:121] - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
-[xc-system-service] 2022-07-03 23:33:40,515 INFO [SpringContextShutdownHook][PushReceiver.java:125] - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
-[xc-system-service] 2022-07-03 23:33:40,515 INFO [SpringContextShutdownHook][FailoverReactor.java:132] - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
-[xc-system-service] 2022-07-03 23:33:43,523 INFO [SpringContextShutdownHook][FailoverReactor.java:134] - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
-[xc-system-service] 2022-07-03 23:33:43,523 INFO [SpringContextShutdownHook][HostReactor.java:414] - com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
-[xc-system-service] 2022-07-03 23:33:43,524 INFO [SpringContextShutdownHook][NamingProxy.java:719] - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
-[xc-system-service] 2022-07-03 23:33:43,525 WARN [SpringContextShutdownHook][NamingHttpClientManager.java:72] - [NamingHttpClientManager] Start destroying NacosRestTemplate
-[xc-system-service] 2022-07-03 23:33:43,525 WARN [SpringContextShutdownHook][NamingHttpClientManager.java:79] - [NamingHttpClientManager] Destruction of the end
-[xc-system-service] 2022-07-03 23:33:43,526 INFO [SpringContextShutdownHook][CredentialWatcher.java:105] - [null] CredentialWatcher is stopped
-[xc-system-service] 2022-07-03 23:33:43,526 INFO [SpringContextShutdownHook][CredentialService.java:98] - [null] CredentialService is freed
-[xc-system-service] 2022-07-03 23:33:43,526 INFO [SpringContextShutdownHook][NamingProxy.java:723] - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
-[xc-system-service] 2022-07-03 23:33:43,526 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'
-[xc-system-service] 2022-07-03 23:33:43,529 INFO [SpringContextShutdownHook][DruidDataSource.java:2003] - {dataSource-1} closing ...
-[xc-system-service] 2022-07-03 23:33:43,530 DEBUG [SpringContextShutdownHook][PreparedStatementPool.java:160] - stmt exit cache
-[xc-system-service] 2022-07-03 23:33:43,531 INFO [SpringContextShutdownHook][DruidDataSource.java:2075] - {dataSource-1} closed
+[xc-system-service] 2022-07-12 22:59:36,605 INFO [main][PropertySourceBootstrapConfiguration.java:112] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-system-service-dev.properties,xc-group'}, BootstrapPropertySource {name='bootstrapProperties-system-service.properties,xc-group'}, BootstrapPropertySource {name='bootstrapProperties-system-service,xc-group'}, BootstrapPropertySource {name='bootstrapProperties-spring-druid-config.properties,xc-group'}, BootstrapPropertySource {name='bootstrapProperties-spring-http-config.properties,xc-group'}, BootstrapPropertySource {name='bootstrapProperties-mp-config.properties,xc-group'}]
+[xc-system-service] 2022-07-12 22:59:36,632 INFO [main][SpringApplication.java:655] - The following profiles are active: dev
+[xc-system-service] 2022-07-12 22:59:37,206 DEBUG [main][LogFactory.java:105] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[xc-system-service] 2022-07-12 22:59:37,266 INFO [main][GenericScope.java:295] - BeanFactory id=c3498111-8366-38f6-99bb-ce383bec230e
+[xc-system-service] 2022-07-12 22:59:37,543 INFO [main][DruidDataSourceAutoConfigure.java:56] - Init DruidDataSource
+[xc-system-service] 2022-07-12 22:59:39,896 INFO [main][DruidDataSource.java:1010] - {dataSource-1} inited
+[xc-system-service] 2022-07-12 22:59:39,934 DEBUG [main][Logger.java:49] - Registered plugin: 'AbstractSqlParserHandler(sqlParserList=null, sqlParserFilter=null)'
+[xc-system-service] 2022-07-12 22:59:39,935 DEBUG [main][Logger.java:49] - Property 'mapperLocations' was not specified.
+[xc-system-service] 2022-07-12 22:59:40,325 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.selectTreeNodes
+[xc-system-service] 2022-07-12 22:59:40,348 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.insert
+[xc-system-service] 2022-07-12 22:59:40,352 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.delete
+[xc-system-service] 2022-07-12 22:59:40,354 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.deleteByMap
+[xc-system-service] 2022-07-12 22:59:40,356 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.deleteById
+[xc-system-service] 2022-07-12 22:59:40,358 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.deleteBatchIds
+[xc-system-service] 2022-07-12 22:59:40,361 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.update
+[xc-system-service] 2022-07-12 22:59:40,362 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.updateById
+[xc-system-service] 2022-07-12 22:59:40,362 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.selectById
+[xc-system-service] 2022-07-12 22:59:40,363 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.selectBatchIds
+[xc-system-service] 2022-07-12 22:59:40,365 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.selectByMap
+[xc-system-service] 2022-07-12 22:59:40,367 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.selectOne
+[xc-system-service] 2022-07-12 22:59:40,369 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.selectCount
+[xc-system-service] 2022-07-12 22:59:40,371 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.selectMaps
+[xc-system-service] 2022-07-12 22:59:40,372 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.selectMapsPage
+[xc-system-service] 2022-07-12 22:59:40,374 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.selectObjs
+[xc-system-service] 2022-07-12 22:59:40,375 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.selectList
+[xc-system-service] 2022-07-12 22:59:40,376 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.CourseCategoryMapper.selectPage
+[xc-system-service] 2022-07-12 22:59:40,411 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.DictionaryMapper.insert
+[xc-system-service] 2022-07-12 22:59:40,412 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.DictionaryMapper.delete
+[xc-system-service] 2022-07-12 22:59:40,413 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.DictionaryMapper.deleteByMap
+[xc-system-service] 2022-07-12 22:59:40,415 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.DictionaryMapper.deleteById
+[xc-system-service] 2022-07-12 22:59:40,417 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.DictionaryMapper.deleteBatchIds
+[xc-system-service] 2022-07-12 22:59:40,418 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.DictionaryMapper.update
+[xc-system-service] 2022-07-12 22:59:40,420 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.DictionaryMapper.updateById
+[xc-system-service] 2022-07-12 22:59:40,420 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.DictionaryMapper.selectById
+[xc-system-service] 2022-07-12 22:59:40,421 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.DictionaryMapper.selectBatchIds
+[xc-system-service] 2022-07-12 22:59:40,423 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.DictionaryMapper.selectByMap
+[xc-system-service] 2022-07-12 22:59:40,424 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.DictionaryMapper.selectOne
+[xc-system-service] 2022-07-12 22:59:40,425 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.DictionaryMapper.selectCount
+[xc-system-service] 2022-07-12 22:59:40,426 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.DictionaryMapper.selectMaps
+[xc-system-service] 2022-07-12 22:59:40,428 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.DictionaryMapper.selectMapsPage
+[xc-system-service] 2022-07-12 22:59:40,429 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.DictionaryMapper.selectObjs
+[xc-system-service] 2022-07-12 22:59:40,430 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.DictionaryMapper.selectList
+[xc-system-service] 2022-07-12 22:59:40,431 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.system.mapper.DictionaryMapper.selectPage
+[xc-system-service] 2022-07-12 22:59:40,952 INFO [main][PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[xc-system-service] 2022-07-12 22:59:41,136 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[xc-system-service] 2022-07-12 22:59:41,137 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[xc-system-service] 2022-07-12 22:59:41,144 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[xc-system-service] 2022-07-12 22:59:41,145 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[xc-system-service] 2022-07-12 22:59:41,191 DEBUG [main][ResourceBundleMessageInterpolator.java:172] - Loaded expression factory via original TCCL
+[xc-system-service] 2022-07-12 22:59:41,200 DEBUG [main][AbstractConfigurationImpl.java:171] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+[xc-system-service] 2022-07-12 22:59:41,201 DEBUG [main][AbstractConfigurationImpl.java:203] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+[xc-system-service] 2022-07-12 22:59:41,202 DEBUG [main][AbstractConfigurationImpl.java:217] - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+[xc-system-service] 2022-07-12 22:59:41,204 DEBUG [main][ValidationXmlParser.java:120] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+[xc-system-service] 2022-07-12 22:59:41,204 DEBUG [main][ResourceLoaderHelper.java:53] - Trying to load META-INF/validation.xml via user class loader
+[xc-system-service] 2022-07-12 22:59:41,205 DEBUG [main][ResourceLoaderHelper.java:60] - Trying to load META-INF/validation.xml via TCCL
+[xc-system-service] 2022-07-12 22:59:41,205 DEBUG [main][ResourceLoaderHelper.java:66] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+[xc-system-service] 2022-07-12 22:59:41,206 DEBUG [main][ValidationXmlParser.java:127] - No META-INF/validation.xml found. Using annotation based configuration only.
+[xc-system-service] 2022-07-12 22:59:41,207 DEBUG [main][TraversableResolvers.java:60] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+[xc-system-service] 2022-07-12 22:59:41,209 DEBUG [main][ValidatorFactoryConfigurationHelper.java:300] - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+[xc-system-service] 2022-07-12 22:59:41,210 DEBUG [main][ValidatorFactoryConfigurationHelper.java:375] - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+[xc-system-service] 2022-07-12 22:59:41,210 DEBUG [main][ValidatorFactoryConfigurationHelper.java:376] - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+[xc-system-service] 2022-07-12 22:59:41,210 DEBUG [main][ValidatorFactoryConfigurationHelper.java:377] - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+[xc-system-service] 2022-07-12 22:59:41,210 DEBUG [main][ValidatorFactoryConfigurationHelper.java:378] - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+[xc-system-service] 2022-07-12 22:59:41,211 DEBUG [main][ValidatorFactoryConfigurationHelper.java:379] - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+[xc-system-service] 2022-07-12 22:59:41,386 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
+[xc-system-service] 2022-07-12 22:59:41,941 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+[xc-system-service] 2022-07-12 22:59:42,141 WARN [main][FreeMarkerAutoConfiguration.java:67] - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+[xc-system-service] 2022-07-12 22:59:42,629 INFO [main][InitUtils.java:65] - initializer namespace from System Property :null
+[xc-system-service] 2022-07-12 22:59:42,630 INFO [main][InitUtils.java:74] - initializer namespace from System Environment :null
+[xc-system-service] 2022-07-12 22:59:42,631 INFO [main][InitUtils.java:84] - initializer namespace from System Property :null
+[xc-system-service] 2022-07-12 22:59:42,639 DEBUG [com.alibaba.nacos.client.naming.updater][NamingProxy.java:195] - server list provided by user: [117.50.181.29:8845]
+[xc-system-service] 2022-07-12 22:59:42,639 DEBUG [main][NamingProxy.java:195] - server list provided by user: [117.50.181.29:8845]
+[xc-system-service] 2022-07-12 22:59:42,645 DEBUG [com.alibaba.nacos.naming.failover][FailoverReactor.java:147] - failover switch is not found, failover00-00---000-VIPSRV_FAILOVER_SWITCH-000---00-00
+[xc-system-service] 2022-07-12 22:59:42,657 DEBUG [main][HostReactor.java:302] - failover-mode: false
+[xc-system-service] 2022-07-12 22:59:42,660 DEBUG [main][NacosRestTemplate.java:476] - HTTP method: GET, url: http://117.50.181.29:8845/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac&clientIP=192.168.43.88&serviceName=xc-group%40%40system-service&udpPort=54297&clusters=DEFAULT, body: {}
+[xc-system-service] 2022-07-12 22:59:42,795 INFO [main][DocumentationPluginsBootstrapper.java:160] - Context refreshed
+[xc-system-service] 2022-07-12 22:59:42,809 INFO [main][DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
+[xc-system-service] 2022-07-12 22:59:42,836 INFO [main][ApiListingReferenceScanner.java:41] - Scanning for api listing references
+[xc-system-service] 2022-07-12 22:59:42,990 INFO [main][StartupInfoLogger.java:61] - Started CourseCategoryMapperTest in 7.813 seconds (JVM running for 8.568)
+[xc-system-service] 2022-07-12 22:59:43,099 INFO [main][ClientWorker.java:239] - [fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac] [subscribe] system-service.properties+xc-group+3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac
+[xc-system-service] 2022-07-12 22:59:43,100 INFO [main][CacheData.java:93] - [fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac] [add-listener] ok, tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac, dataId=system-service.properties, group=xc-group, cnt=1
+[xc-system-service] 2022-07-12 22:59:43,100 INFO [main][ClientWorker.java:239] - [fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac] [subscribe] system-service+xc-group+3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac
+[xc-system-service] 2022-07-12 22:59:43,101 INFO [main][CacheData.java:93] - [fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac] [add-listener] ok, tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac, dataId=system-service, group=xc-group, cnt=1
+[xc-system-service] 2022-07-12 22:59:43,102 INFO [main][ClientWorker.java:239] - [fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac] [subscribe] system-service-dev.properties+xc-group+3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac
+[xc-system-service] 2022-07-12 22:59:43,102 INFO [main][CacheData.java:93] - [fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac] [add-listener] ok, tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac, dataId=system-service-dev.properties, group=xc-group, cnt=1
+[xc-system-service] 2022-07-12 22:59:43,107 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac][NacosRestTemplate.java:476] - HTTP method: POST, url: http://117.50.181.29:8845/nacos/v1/cs/configs/listener, body: {Listening-Configs=system-service-dev.propertiesxc-groupf31127ff78ea4e609cc3b54884d8e97c3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deacsystem-service.propertiesxc-group3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deacsystem-servicexc-group3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac, tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac}
+[xc-system-service] 2022-07-12 22:59:43,108 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@64f555e7]
+[xc-system-service] 2022-07-12 22:59:43,159 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac][NacosRestTemplate.java:476] - HTTP method: POST, url: http://117.50.181.29:8845/nacos/v1/cs/configs/listener, body: {Listening-Configs=system-service-dev.propertiesxc-groupf31127ff78ea4e609cc3b54884d8e97c3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deacsystem-service.propertiesxc-group3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deacsystem-servicexc-group3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac, tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac}
+[xc-system-service] 2022-07-12 22:59:43,160 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@64f555e7]
+[xc-system-service] 2022-07-12 22:59:43,276 DEBUG [main][BaseJdbcLogger.java:137] - ==>  Preparing: select one.id one_id, one.name one_name, one.parentid one_parentid, one.orderby one_orderby, one.label one_label, two.id two_id, two.name two_name, two.parentid two_parentid, two.orderby two_orderby, two.label two_label, three.id three_id, three.name three_name, three.parentid three_parentid, three.orderby three_orderby, three.label three_label from course_category one inner join course_category two on one.id = two.parentid inner join course_category three on two.id = three.parentid where one.parentid = 0 and one.is_show = 1 and two.is_show = 1 and three.is_show = 1 order by two.orderby, three.orderby
+[xc-system-service] 2022-07-12 22:59:43,304 DEBUG [main][BaseJdbcLogger.java:137] - ==> Parameters: 
+[xc-system-service] 2022-07-12 22:59:43,424 DEBUG [main][BaseJdbcLogger.java:137] - <==      Total: 128
+[xc-system-service] 2022-07-12 22:59:43,426 DEBUG [main][PreparedStatementPool.java:129] - stmt enter cache
+[xc-system-service] 2022-07-12 22:59:43,442 WARN [Thread-13][NotifyCenter.java:145] - [NotifyCenter] Start destroying Publisher
+[xc-system-service] 2022-07-12 22:59:43,442 WARN [Thread-2][HttpClientBeanHolder.java:108] - [HttpClientBeanHolder] Start destroying common HttpClient
+[xc-system-service] 2022-07-12 22:59:43,442 WARN [Thread-13][NotifyCenter.java:162] - [NotifyCenter] Destruction of the end
+[xc-system-service] 2022-07-12 22:59:43,442 WARN [Thread-2][HttpClientBeanHolder.java:114] - [HttpClientBeanHolder] Destruction of the end
+[xc-system-service] 2022-07-12 22:59:43,443 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+[xc-system-service] 2022-07-12 22:59:43,445 INFO [SpringContextShutdownHook][BeatReactor.java:147] - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+[xc-system-service] 2022-07-12 22:59:43,445 INFO [SpringContextShutdownHook][BeatReactor.java:149] - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+[xc-system-service] 2022-07-12 22:59:43,445 INFO [SpringContextShutdownHook][HostReactor.java:409] - com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+[xc-system-service] 2022-07-12 22:59:43,805 DEBUG [com.alibaba.nacos.client.naming.updater][NacosRestTemplate.java:476] - HTTP method: GET, url: http://117.50.181.29:8845/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac&clientIP=192.168.43.88&serviceName=xc-group%40%40system-service&udpPort=54297&clusters=DEFAULT, body: {}
+[xc-system-service] 2022-07-12 22:59:43,890 INFO [SpringContextShutdownHook][PushReceiver.java:121] - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+[xc-system-service] 2022-07-12 22:59:46,915 INFO [SpringContextShutdownHook][PushReceiver.java:125] - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+[xc-system-service] 2022-07-12 22:59:46,915 INFO [SpringContextShutdownHook][FailoverReactor.java:132] - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+[xc-system-service] 2022-07-12 22:59:49,931 INFO [SpringContextShutdownHook][FailoverReactor.java:134] - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+[xc-system-service] 2022-07-12 22:59:49,931 INFO [SpringContextShutdownHook][HostReactor.java:414] - com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+[xc-system-service] 2022-07-12 22:59:49,932 INFO [SpringContextShutdownHook][NamingProxy.java:719] - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+[xc-system-service] 2022-07-12 22:59:49,933 WARN [SpringContextShutdownHook][NamingHttpClientManager.java:72] - [NamingHttpClientManager] Start destroying NacosRestTemplate
+[xc-system-service] 2022-07-12 22:59:49,933 WARN [SpringContextShutdownHook][NamingHttpClientManager.java:79] - [NamingHttpClientManager] Destruction of the end
+[xc-system-service] 2022-07-12 22:59:49,933 INFO [SpringContextShutdownHook][CredentialWatcher.java:105] - [null] CredentialWatcher is stopped
+[xc-system-service] 2022-07-12 22:59:49,933 INFO [SpringContextShutdownHook][CredentialService.java:98] - [null] CredentialService is freed
+[xc-system-service] 2022-07-12 22:59:49,933 INFO [SpringContextShutdownHook][NamingProxy.java:723] - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+[xc-system-service] 2022-07-12 22:59:49,934 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+[xc-system-service] 2022-07-12 22:59:49,936 INFO [SpringContextShutdownHook][DruidDataSource.java:2003] - {dataSource-1} closing ...
+[xc-system-service] 2022-07-12 22:59:49,938 DEBUG [SpringContextShutdownHook][PreparedStatementPool.java:160] - stmt exit cache
+[xc-system-service] 2022-07-12 22:59:49,939 INFO [SpringContextShutdownHook][DruidDataSource.java:2075] - {dataSource-1} closed

@@ -19,9 +19,9 @@ public class MediaCodeGenerator {
 	private static final String SERVICE_NAME = "media";
 
 	private static final String DATA_SOURCE_USER_NAME  = "root";
-	private static final String DATA_SOURCE_PASSWORD  = "root";
+	private static final String DATA_SOURCE_PASSWORD  = "j3391111";
 	private static final String[] TABLE_NAMES = new String[]{
-			// "media",
+			 "media",
 			"live_course",
 	};
 
@@ -54,7 +54,7 @@ public class MediaCodeGenerator {
 		// 数据库配置
 		DataSourceConfig dsc = new DataSourceConfig();
 		dsc.setDbType(DbType.MYSQL);
-		dsc.setUrl("jdbc:mysql://localhost:3306/xc_" + SERVICE_NAME
+		dsc.setUrl("jdbc:mysql://117.50.181.29:3306/xc_" + SERVICE_NAME
 				+ "?useUnicode=true&useSSL=false&characterEncoding=utf8");
 		dsc.setDriverName("com.mysql.jdbc.Driver");
 		dsc.setUsername(DATA_SOURCE_USER_NAME);

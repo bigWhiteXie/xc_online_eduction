@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../farming-master/farming.iml" filepath="$PROJECT_DIR$/../farming-master/farming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../test-swagger/test-swagger.iml" filepath="$PROJECT_DIR$/../test-swagger/test-swagger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xc-parent/xc-api/xc-api.iml" filepath="$PROJECT_DIR$/xc-parent/xc-api/xc-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xc-parent/xc-common/xc-common.iml" filepath="$PROJECT_DIR$/xc-parent/xc-common/xc-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xc-parent/xc-content-service/xc-content-service.iml" filepath="$PROJECT_DIR$/xc-parent/xc-content-service/xc-content-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xc-parent/xc-gateway-server/xc-gateway-server.iml" filepath="$PROJECT_DIR$/xc-parent/xc-gateway-server/xc-gateway-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xc-parent/xc-media-service/xc-media-service.iml" filepath="$PROJECT_DIR$/xc-parent/xc-media-service/xc-media-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xc-parent/xc-mp-generator/xc-mp-generator.iml" filepath="$PROJECT_DIR$/xc-parent/xc-mp-generator/xc-mp-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xc-parent/xc-parent.iml" filepath="$PROJECT_DIR$/xc-parent/xc-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xc-parent/xc-system-service/xc-system-service.iml" filepath="$PROJECT_DIR$/xc-parent/xc-system-service/xc-system-service.iml" />
+    </modules>
+  </component>
+</project>

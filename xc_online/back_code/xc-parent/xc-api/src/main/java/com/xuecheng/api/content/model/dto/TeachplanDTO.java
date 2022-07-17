@@ -71,4 +71,7 @@ public class TeachplanDTO implements Serializable {
     @ApiModelProperty(value = "课程计划子级树形结构集合")
     private List<TeachplanDTO> teachPlanTreeNodes;
 
+    @ApiModelProperty(value = "媒资信息")
+    private TeachplanMediaDTO teachplanMedia;   //添加课程计划媒资信息属性
+
 }

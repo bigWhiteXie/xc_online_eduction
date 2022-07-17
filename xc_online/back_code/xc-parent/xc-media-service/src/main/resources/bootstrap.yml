@@ -1,0 +1,50 @@
+#微服务配置
+spring:
+  application:
+    name: media-service
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 117.50.181.29:8845
+        group: ${dev.group}
+        namespace: 3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac
+      config:
+        server-addr: 117.50.181.29:8845
+        group: ${dev.group}
+        namespace: 3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac
+        file-extension: properties
+        shared-configs:
+          - dataId: mp-config.properties
+            group: ${dev.group}
+          - dataId: spring-http-config.properties
+            group: ${dev.group}
+          - dataId: spring-druid-config.properties
+            group: ${dev.group}
+          - dataId: feign-config.properties
+            group: ${group.name}
+          - dataId: ribbon-config.properties
+            group: ${group.name}
+
+
+  profiles:
+    active: dev
+
+dev:
+  group: xc-group
+
+
+# 日志文件配置路径
+logging:
+  config: classpath:log4j2-dev.xml
+
+
+# swagger 文档配置
+swagger:
+  title: "学成在线媒资管理系统"
+  description: "媒资管理系统对课程媒资相关信息进行业务管理数据"
+  base-package: com.xuecheng.media
+  enabled: true
+  version: 1.0.0

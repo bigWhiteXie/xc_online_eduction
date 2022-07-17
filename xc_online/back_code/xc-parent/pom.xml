@@ -12,6 +12,7 @@
         <module>xc-content-service</module>
         <module>xc-gateway-server</module>
         <module>xc-system-service</module>
+        <module>xc-media-service</module>
     </modules>
 
     <!-- 继承 Spring Boot 父工程 -->

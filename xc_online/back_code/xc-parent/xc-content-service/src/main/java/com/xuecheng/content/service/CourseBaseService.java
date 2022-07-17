@@ -28,9 +28,11 @@ public interface CourseBaseService extends IService<CourseBase> {
 
     CourseBaseDTO createCourseBaseService(CourseBaseDTO dto);
 
-    CourseBaseDTO getCourseBaseById(Long courseBaseId);
+    CourseBaseDTO getCourseBaseById(Long courseBaseId,Long companyId);
 
     CourseBaseDTO modifyCourseBase(CourseBaseDTO dto);
 
     Boolean removeCourseBase(Long courseBaseId);
+
+    boolean commitCourse(Long courseBaseId, Long companyId);
 }

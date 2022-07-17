@@ -20,4 +20,6 @@ public class CourseTeacherController {
 
     @Autowired
     private CourseTeacherService  courseTeacherService;
+
+
 }

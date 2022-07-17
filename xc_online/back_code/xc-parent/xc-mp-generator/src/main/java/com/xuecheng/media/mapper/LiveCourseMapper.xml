@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xuecheng.media.mapper.LiveCourseMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xuecheng.media.entity.LiveCourse">
+        <id column="id" property="id" />
+        <result column="push_url" property="pushUrl" />
+        <result column="play_url" property="playUrl" />
+        <result column="company_id" property="companyId" />
+        <result column="company_name" property="companyName" />
+        <result column="teachplan_id" property="teachplanId" />
+        <result column="course_id" property="courseId" />
+        <result column="course_pub_id" property="coursePubId" />
+        <result column="username" property="username" />
+        <result column="create_date" property="createDate" />
+        <result column="course_name" property="courseName" />
+        <result column="teachplan_name" property="teachplanName" />
+        <result column="live_start" property="liveStart" />
+        <result column="live_end" property="liveEnd" />
+        <result column="is_preview" property="isPreview" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, push_url, play_url, company_id, company_name, teachplan_id, course_id, course_pub_id, username, create_date, course_name, teachplan_name, live_start, live_end, is_preview
+    </sql>
+
+</mapper>

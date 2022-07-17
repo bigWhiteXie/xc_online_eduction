@@ -1,0 +1,505 @@
+[xc-content-service] 2022-07-09 13:04:00,844 DEBUG [main][ApolloApplicationContextInitializer.java:77] - Apollo bootstrap config is not enabled for context org.springframework.context.annotation.AnnotationConfigApplicationContext@2617f816, started on Thu Jan 01 08:00:00 CST 1970, see property: ${apollo.bootstrap.enabled}
+[xc-content-service] 2022-07-09 13:04:01,299 INFO [main][LocalConfigInfoProcessor.java:212] - LOCAL_SNAPSHOT_PATH:C:\Users\26072\nacos\config
+[xc-content-service] 2022-07-09 13:04:01,447 DEBUG [main][NacosRestTemplate.java:476] - HTTP method: GET, url: http://117.50.181.29:8845/nacos/v1/cs/configs?dataId=mp-config.properties&tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac&group=xc-group, body: null
+[xc-content-service] 2022-07-09 13:04:01,449 DEBUG [main][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@29528a22]
+[xc-content-service] 2022-07-09 13:04:01,450 INFO [main][Limiter.java:54] - limitTime:5.0
+[xc-content-service] 2022-07-09 13:04:01,610 INFO [main][JvmUtil.java:49] - isMultiInstance:false
+[xc-content-service] 2022-07-09 13:04:01,612 DEBUG [main][NacosPropertySourceBuilder.java:93] - Loading nacos data, dataId: 'mp-config.properties', group: 'xc-group', data: #驼峰下划线转换
+mybatis-plus.global-config.db-column-underline = true
+#实体扫描，多个package用逗号或者分号分隔
+mybatis-plus.typeAliasesPackage = com.xuecheng.*.entity
+#字段策略 0:"忽略判断",1:"非 NULL 判断"),2:"非空判断"
+mybatis-plus.global-config.field-strategy=2
+#全局地开启或关闭配置文件中的所有映射器已经配置的任何缓存，开发时不需要开启。
+mybatis-plus.configuration.cache-enabled = false
+#映射文件mapper文件存储位置
+mybatis-plus.mapper-locations = classpath:com.xuecheng.*.mapper/*.xml
+#主键类型  0:"数据库ID自增", 1:"用户输入ID",2:"全局唯一ID (数字类型唯一ID)", 3:"全局唯一ID UUID";
+mybatis-plus.global-config.id-type = 0
+#刷新mapper 调试神器
+mybatis-plus.global-config.refresh-mapper = true
+[xc-content-service] 2022-07-09 13:04:01,624 DEBUG [main][NacosRestTemplate.java:476] - HTTP method: GET, url: http://117.50.181.29:8845/nacos/v1/cs/configs?dataId=spring-http-config.properties&tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac&group=xc-group, body: null
+[xc-content-service] 2022-07-09 13:04:01,624 DEBUG [main][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@29528a22]
+[xc-content-service] 2022-07-09 13:04:01,697 DEBUG [main][NacosPropertySourceBuilder.java:93] - Loading nacos data, dataId: 'spring-http-config.properties', group: 'xc-group', data: #srpingboot http 配置信息
+spring.http.encoding.enabled = true
+spring.http.encoding.charset = UTF-8
+spring.http.encoding.force = true
+server.use-forward-headers = true
+server.servlet.context-path = /
+server.port=8888
+[xc-content-service] 2022-07-09 13:04:01,699 DEBUG [main][NacosRestTemplate.java:476] - HTTP method: GET, url: http://117.50.181.29:8845/nacos/v1/cs/configs?dataId=spring-druid-config.properties&tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac&group=xc-group, body: null
+[xc-content-service] 2022-07-09 13:04:01,699 DEBUG [main][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@29528a22]
+[xc-content-service] 2022-07-09 13:04:01,785 DEBUG [main][NacosPropertySourceBuilder.java:93] - Loading nacos data, dataId: 'spring-druid-config.properties', group: 'xc-group', data: #spring druid 配置信息
+spring.datasource.driver-class-name = com.mysql.jdbc.Driver
+spring.datasource.password = j3391111
+spring.datasource.username = root
+#初始化连接池的的连接数据量
+spring.datasource.druid.initial-size = 5
+#连接池最小连接数 
+spring.datasource.druid.min-idle = 5
+#获取连接等待超时时间 
+spring.datasource.druid.max-wait = 60000
+# 要启用PreparedStatementCache,必须配置大于0，当大于0时，poolPreparedStatements自动触发修改为true。
+spring.datasource.druid.max-pool-prepared-statement-per-connection-size = 20
+#连接池中最大激活连接数
+spring.datasource.druid.max-active = 20
+[xc-content-service] 2022-07-09 13:04:01,787 DEBUG [main][NacosRestTemplate.java:476] - HTTP method: GET, url: http://117.50.181.29:8845/nacos/v1/cs/configs?dataId=content-service&tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac&group=xc-group, body: null
+[xc-content-service] 2022-07-09 13:04:01,787 DEBUG [main][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@29528a22]
+[xc-content-service] 2022-07-09 13:04:01,871 WARN [main][NacosPropertySourceBuilder.java:87] - Ignore the empty nacos configuration and get it based on dataId[content-service] & group[xc-group]
+[xc-content-service] 2022-07-09 13:04:01,871 DEBUG [main][NacosRestTemplate.java:476] - HTTP method: GET, url: http://117.50.181.29:8845/nacos/v1/cs/configs?dataId=content-service.properties&tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac&group=xc-group, body: null
+[xc-content-service] 2022-07-09 13:04:01,871 DEBUG [main][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@29528a22]
+[xc-content-service] 2022-07-09 13:04:01,926 WARN [main][NacosPropertySourceBuilder.java:87] - Ignore the empty nacos configuration and get it based on dataId[content-service.properties] & group[xc-group]
+[xc-content-service] 2022-07-09 13:04:01,927 DEBUG [main][NacosRestTemplate.java:476] - HTTP method: GET, url: http://117.50.181.29:8845/nacos/v1/cs/configs?dataId=content-service-dev.properties&tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac&group=xc-group, body: null
+[xc-content-service] 2022-07-09 13:04:01,927 DEBUG [main][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@29528a22]
+[xc-content-service] 2022-07-09 13:04:01,968 DEBUG [main][NacosPropertySourceBuilder.java:93] - Loading nacos data, dataId: 'content-service-dev.properties', group: 'xc-group', data: #spring http 配置信息
+server.servlet.context-path = /content
+server.port=63040
+
+
+#spring druid 配置信息
+spring.datasource.url = jdbc:mysql://117.50.181.29:3306/xc_content?userUnicode=true&useSSL=false&characterEncoding=utf8
+
+# 全局逻辑删除的实体字段名
+mybatis-plus.global-config.db-config.logic-delete-field = status
+# 逻辑已删除值(默认为0)  
+mybatis-plus.global-config.db-config.logic-delete-value = 0 
+# 逻辑未删除值(默认为1)
+mybatis-plus.global-config.db-config.logic-not-delete-value = 1 
+
+
+[xc-content-service] 2022-07-09 13:04:01,972 INFO [main][PropertySourceBootstrapConfiguration.java:112] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-content-service-dev.properties,xc-group'}, BootstrapPropertySource {name='bootstrapProperties-content-service.properties,xc-group'}, BootstrapPropertySource {name='bootstrapProperties-content-service,xc-group'}, BootstrapPropertySource {name='bootstrapProperties-spring-druid-config.properties,xc-group'}, BootstrapPropertySource {name='bootstrapProperties-spring-http-config.properties,xc-group'}, BootstrapPropertySource {name='bootstrapProperties-mp-config.properties,xc-group'}]
+[xc-content-service] 2022-07-09 13:04:01,998 DEBUG [main][ApolloApplicationContextInitializer.java:77] - Apollo bootstrap config is not enabled for context org.springframework.web.context.support.GenericWebApplicationContext@2c43eb8, started on Thu Jan 01 08:00:00 CST 1970, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2617f816, see property: ${apollo.bootstrap.enabled}
+[xc-content-service] 2022-07-09 13:04:02,004 INFO [main][SpringApplication.java:655] - The following profiles are active: dev
+[xc-content-service] 2022-07-09 13:04:02,662 DEBUG [main][LogFactory.java:105] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[xc-content-service] 2022-07-09 13:04:02,727 INFO [main][GenericScope.java:295] - BeanFactory id=051895e6-16a4-3f55-b11a-5907148a7b65
+[xc-content-service] 2022-07-09 13:04:03,016 INFO [main][DruidDataSourceAutoConfigure.java:56] - Init DruidDataSource
+[xc-content-service] 2022-07-09 13:04:06,328 INFO [main][DruidDataSource.java:1010] - {dataSource-1} inited
+[xc-content-service] 2022-07-09 13:04:06,372 DEBUG [main][Logger.java:49] - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@b5aa65b'
+[xc-content-service] 2022-07-09 13:04:06,373 DEBUG [main][Logger.java:49] - Property 'mapperLocations' was not specified.
+[xc-content-service] 2022-07-09 13:04:06,724 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseBaseMapper.insert
+[xc-content-service] 2022-07-09 13:04:06,728 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseBaseMapper.delete
+[xc-content-service] 2022-07-09 13:04:06,730 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseBaseMapper.deleteByMap
+[xc-content-service] 2022-07-09 13:04:06,753 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseBaseMapper.deleteById
+[xc-content-service] 2022-07-09 13:04:06,755 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseBaseMapper.deleteBatchIds
+[xc-content-service] 2022-07-09 13:04:06,758 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseBaseMapper.update
+[xc-content-service] 2022-07-09 13:04:06,760 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseBaseMapper.updateById
+[xc-content-service] 2022-07-09 13:04:06,760 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseBaseMapper.selectById
+[xc-content-service] 2022-07-09 13:04:06,761 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseBaseMapper.selectBatchIds
+[xc-content-service] 2022-07-09 13:04:06,762 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseBaseMapper.selectByMap
+[xc-content-service] 2022-07-09 13:04:06,764 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseBaseMapper.selectOne
+[xc-content-service] 2022-07-09 13:04:06,765 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseBaseMapper.selectCount
+[xc-content-service] 2022-07-09 13:04:06,767 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseBaseMapper.selectMaps
+[xc-content-service] 2022-07-09 13:04:06,768 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseBaseMapper.selectMapsPage
+[xc-content-service] 2022-07-09 13:04:06,769 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseBaseMapper.selectObjs
+[xc-content-service] 2022-07-09 13:04:06,771 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseBaseMapper.selectList
+[xc-content-service] 2022-07-09 13:04:06,772 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseBaseMapper.selectPage
+[xc-content-service] 2022-07-09 13:04:06,785 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseMarketMapper.insert
+[xc-content-service] 2022-07-09 13:04:06,786 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseMarketMapper.delete
+[xc-content-service] 2022-07-09 13:04:06,787 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseMarketMapper.deleteByMap
+[xc-content-service] 2022-07-09 13:04:06,788 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseMarketMapper.deleteById
+[xc-content-service] 2022-07-09 13:04:06,789 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseMarketMapper.deleteBatchIds
+[xc-content-service] 2022-07-09 13:04:06,790 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseMarketMapper.update
+[xc-content-service] 2022-07-09 13:04:06,790 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseMarketMapper.updateById
+[xc-content-service] 2022-07-09 13:04:06,791 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseMarketMapper.selectById
+[xc-content-service] 2022-07-09 13:04:06,791 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseMarketMapper.selectBatchIds
+[xc-content-service] 2022-07-09 13:04:06,793 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseMarketMapper.selectByMap
+[xc-content-service] 2022-07-09 13:04:06,794 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseMarketMapper.selectOne
+[xc-content-service] 2022-07-09 13:04:06,795 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseMarketMapper.selectCount
+[xc-content-service] 2022-07-09 13:04:06,796 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseMarketMapper.selectMaps
+[xc-content-service] 2022-07-09 13:04:06,797 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseMarketMapper.selectMapsPage
+[xc-content-service] 2022-07-09 13:04:06,798 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseMarketMapper.selectObjs
+[xc-content-service] 2022-07-09 13:04:06,799 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseMarketMapper.selectList
+[xc-content-service] 2022-07-09 13:04:06,800 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseMarketMapper.selectPage
+[xc-content-service] 2022-07-09 13:04:06,842 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CoursePubMapper.insert
+[xc-content-service] 2022-07-09 13:04:06,844 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CoursePubMapper.delete
+[xc-content-service] 2022-07-09 13:04:06,845 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CoursePubMapper.deleteByMap
+[xc-content-service] 2022-07-09 13:04:06,846 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CoursePubMapper.deleteById
+[xc-content-service] 2022-07-09 13:04:06,847 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CoursePubMapper.deleteBatchIds
+[xc-content-service] 2022-07-09 13:04:06,848 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CoursePubMapper.update
+[xc-content-service] 2022-07-09 13:04:06,850 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CoursePubMapper.updateById
+[xc-content-service] 2022-07-09 13:04:06,850 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CoursePubMapper.selectById
+[xc-content-service] 2022-07-09 13:04:06,851 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CoursePubMapper.selectBatchIds
+[xc-content-service] 2022-07-09 13:04:06,852 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CoursePubMapper.selectByMap
+[xc-content-service] 2022-07-09 13:04:06,854 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CoursePubMapper.selectOne
+[xc-content-service] 2022-07-09 13:04:06,856 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CoursePubMapper.selectCount
+[xc-content-service] 2022-07-09 13:04:06,858 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CoursePubMapper.selectMaps
+[xc-content-service] 2022-07-09 13:04:06,860 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CoursePubMapper.selectMapsPage
+[xc-content-service] 2022-07-09 13:04:06,862 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CoursePubMapper.selectObjs
+[xc-content-service] 2022-07-09 13:04:06,865 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CoursePubMapper.selectList
+[xc-content-service] 2022-07-09 13:04:06,867 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CoursePubMapper.selectPage
+[xc-content-service] 2022-07-09 13:04:06,896 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseTeacherMapper.insert
+[xc-content-service] 2022-07-09 13:04:06,900 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseTeacherMapper.delete
+[xc-content-service] 2022-07-09 13:04:06,903 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseTeacherMapper.deleteByMap
+[xc-content-service] 2022-07-09 13:04:06,906 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseTeacherMapper.deleteById
+[xc-content-service] 2022-07-09 13:04:06,908 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseTeacherMapper.deleteBatchIds
+[xc-content-service] 2022-07-09 13:04:06,910 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseTeacherMapper.update
+[xc-content-service] 2022-07-09 13:04:06,911 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseTeacherMapper.updateById
+[xc-content-service] 2022-07-09 13:04:06,911 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseTeacherMapper.selectById
+[xc-content-service] 2022-07-09 13:04:06,912 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseTeacherMapper.selectBatchIds
+[xc-content-service] 2022-07-09 13:04:06,913 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseTeacherMapper.selectByMap
+[xc-content-service] 2022-07-09 13:04:06,914 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseTeacherMapper.selectOne
+[xc-content-service] 2022-07-09 13:04:06,916 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseTeacherMapper.selectCount
+[xc-content-service] 2022-07-09 13:04:06,917 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseTeacherMapper.selectMaps
+[xc-content-service] 2022-07-09 13:04:06,919 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseTeacherMapper.selectMapsPage
+[xc-content-service] 2022-07-09 13:04:06,921 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseTeacherMapper.selectObjs
+[xc-content-service] 2022-07-09 13:04:06,923 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseTeacherMapper.selectList
+[xc-content-service] 2022-07-09 13:04:06,925 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseTeacherMapper.selectPage
+[xc-content-service] 2022-07-09 13:04:06,952 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.selectMaxOrderby
+[xc-content-service] 2022-07-09 13:04:06,955 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.insert
+[xc-content-service] 2022-07-09 13:04:06,957 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.delete
+[xc-content-service] 2022-07-09 13:04:06,958 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.deleteByMap
+[xc-content-service] 2022-07-09 13:04:06,959 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.deleteById
+[xc-content-service] 2022-07-09 13:04:06,960 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.deleteBatchIds
+[xc-content-service] 2022-07-09 13:04:06,963 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.update
+[xc-content-service] 2022-07-09 13:04:06,964 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.updateById
+[xc-content-service] 2022-07-09 13:04:06,965 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.selectById
+[xc-content-service] 2022-07-09 13:04:06,967 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.selectBatchIds
+[xc-content-service] 2022-07-09 13:04:06,968 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.selectByMap
+[xc-content-service] 2022-07-09 13:04:06,970 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.selectOne
+[xc-content-service] 2022-07-09 13:04:06,971 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.selectCount
+[xc-content-service] 2022-07-09 13:04:06,973 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.selectMaps
+[xc-content-service] 2022-07-09 13:04:06,975 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.selectMapsPage
+[xc-content-service] 2022-07-09 13:04:06,976 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.selectObjs
+[xc-content-service] 2022-07-09 13:04:06,978 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.selectList
+[xc-content-service] 2022-07-09 13:04:06,980 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.selectPage
+[xc-content-service] 2022-07-09 13:04:07,007 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMediaMapper.insert
+[xc-content-service] 2022-07-09 13:04:07,008 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMediaMapper.delete
+[xc-content-service] 2022-07-09 13:04:07,009 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMediaMapper.deleteByMap
+[xc-content-service] 2022-07-09 13:04:07,011 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMediaMapper.deleteById
+[xc-content-service] 2022-07-09 13:04:07,012 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMediaMapper.deleteBatchIds
+[xc-content-service] 2022-07-09 13:04:07,014 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMediaMapper.update
+[xc-content-service] 2022-07-09 13:04:07,015 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMediaMapper.updateById
+[xc-content-service] 2022-07-09 13:04:07,016 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMediaMapper.selectById
+[xc-content-service] 2022-07-09 13:04:07,017 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMediaMapper.selectBatchIds
+[xc-content-service] 2022-07-09 13:04:07,018 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMediaMapper.selectByMap
+[xc-content-service] 2022-07-09 13:04:07,020 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMediaMapper.selectOne
+[xc-content-service] 2022-07-09 13:04:07,022 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMediaMapper.selectCount
+[xc-content-service] 2022-07-09 13:04:07,024 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMediaMapper.selectMaps
+[xc-content-service] 2022-07-09 13:04:07,026 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMediaMapper.selectMapsPage
+[xc-content-service] 2022-07-09 13:04:07,027 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMediaMapper.selectObjs
+[xc-content-service] 2022-07-09 13:04:07,029 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMediaMapper.selectList
+[xc-content-service] 2022-07-09 13:04:07,031 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMediaMapper.selectPage
+[xc-content-service] 2022-07-09 13:04:07,532 INFO [main][PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[xc-content-service] 2022-07-09 13:04:07,656 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[xc-content-service] 2022-07-09 13:04:07,656 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[xc-content-service] 2022-07-09 13:04:07,663 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[xc-content-service] 2022-07-09 13:04:07,663 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[xc-content-service] 2022-07-09 13:04:07,693 DEBUG [main][ResourceBundleMessageInterpolator.java:172] - Loaded expression factory via original TCCL
+[xc-content-service] 2022-07-09 13:04:07,698 DEBUG [main][AbstractConfigurationImpl.java:171] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+[xc-content-service] 2022-07-09 13:04:07,699 DEBUG [main][AbstractConfigurationImpl.java:203] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+[xc-content-service] 2022-07-09 13:04:07,699 DEBUG [main][AbstractConfigurationImpl.java:217] - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+[xc-content-service] 2022-07-09 13:04:07,701 DEBUG [main][ValidationXmlParser.java:120] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+[xc-content-service] 2022-07-09 13:04:07,701 DEBUG [main][ResourceLoaderHelper.java:53] - Trying to load META-INF/validation.xml via user class loader
+[xc-content-service] 2022-07-09 13:04:07,701 DEBUG [main][ResourceLoaderHelper.java:60] - Trying to load META-INF/validation.xml via TCCL
+[xc-content-service] 2022-07-09 13:04:07,702 DEBUG [main][ResourceLoaderHelper.java:66] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+[xc-content-service] 2022-07-09 13:04:07,702 DEBUG [main][ValidationXmlParser.java:127] - No META-INF/validation.xml found. Using annotation based configuration only.
+[xc-content-service] 2022-07-09 13:04:07,702 DEBUG [main][TraversableResolvers.java:60] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+[xc-content-service] 2022-07-09 13:04:07,704 DEBUG [main][ValidatorFactoryConfigurationHelper.java:300] - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+[xc-content-service] 2022-07-09 13:04:07,704 DEBUG [main][ValidatorFactoryConfigurationHelper.java:375] - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+[xc-content-service] 2022-07-09 13:04:07,704 DEBUG [main][ValidatorFactoryConfigurationHelper.java:376] - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+[xc-content-service] 2022-07-09 13:04:07,704 DEBUG [main][ValidatorFactoryConfigurationHelper.java:377] - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+[xc-content-service] 2022-07-09 13:04:07,705 DEBUG [main][ValidatorFactoryConfigurationHelper.java:378] - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+[xc-content-service] 2022-07-09 13:04:07,705 DEBUG [main][ValidatorFactoryConfigurationHelper.java:379] - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+[xc-content-service] 2022-07-09 13:04:07,805 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
+[xc-content-service] 2022-07-09 13:04:08,280 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+[xc-content-service] 2022-07-09 13:04:08,544 WARN [main][FreeMarkerAutoConfiguration.java:67] - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+[xc-content-service] 2022-07-09 13:04:09,470 INFO [main][InitUtils.java:65] - initializer namespace from System Property :null
+[xc-content-service] 2022-07-09 13:04:09,471 INFO [main][InitUtils.java:74] - initializer namespace from System Environment :null
+[xc-content-service] 2022-07-09 13:04:09,471 INFO [main][InitUtils.java:84] - initializer namespace from System Property :null
+[xc-content-service] 2022-07-09 13:04:09,478 DEBUG [com.alibaba.nacos.client.naming.updater][NamingProxy.java:195] - server list provided by user: [117.50.181.29:8845]
+[xc-content-service] 2022-07-09 13:04:09,478 DEBUG [main][NamingProxy.java:195] - server list provided by user: [117.50.181.29:8845]
+[xc-content-service] 2022-07-09 13:04:09,485 DEBUG [com.alibaba.nacos.naming.failover][FailoverReactor.java:147] - failover switch is not found, failover00-00---000-VIPSRV_FAILOVER_SWITCH-000---00-00
+[xc-content-service] 2022-07-09 13:04:09,495 DEBUG [main][HostReactor.java:302] - failover-mode: false
+[xc-content-service] 2022-07-09 13:04:09,497 DEBUG [main][NacosRestTemplate.java:476] - HTTP method: GET, url: http://117.50.181.29:8845/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac&clientIP=192.168.43.88&serviceName=xc-group%40%40content-service&udpPort=59074&clusters=DEFAULT, body: {}
+[xc-content-service] 2022-07-09 13:04:09,618 INFO [main][DocumentationPluginsBootstrapper.java:160] - Context refreshed
+[xc-content-service] 2022-07-09 13:04:09,625 INFO [main][DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
+[xc-content-service] 2022-07-09 13:04:09,648 INFO [main][ApiListingReferenceScanner.java:41] - Scanning for api listing references
+[xc-content-service] 2022-07-09 13:04:09,765 INFO [main][StartupInfoLogger.java:61] - Started TestTechPlanTreeNodes in 9.508 seconds (JVM running for 10.939)
+[xc-content-service] 2022-07-09 13:04:09,768 INFO [main][ClientWorker.java:239] - [fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac] [subscribe] content-service.properties+xc-group+3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac
+[xc-content-service] 2022-07-09 13:04:09,770 INFO [main][CacheData.java:93] - [fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac] [add-listener] ok, tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac, dataId=content-service.properties, group=xc-group, cnt=1
+[xc-content-service] 2022-07-09 13:04:09,771 INFO [main][ClientWorker.java:239] - [fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac] [subscribe] content-service-dev.properties+xc-group+3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac
+[xc-content-service] 2022-07-09 13:04:09,771 INFO [main][CacheData.java:93] - [fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac] [add-listener] ok, tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac, dataId=content-service-dev.properties, group=xc-group, cnt=1
+[xc-content-service] 2022-07-09 13:04:09,771 INFO [main][ClientWorker.java:239] - [fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac] [subscribe] content-service+xc-group+3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac
+[xc-content-service] 2022-07-09 13:04:09,771 INFO [main][CacheData.java:93] - [fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac] [add-listener] ok, tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac, dataId=content-service, group=xc-group, cnt=1
+[xc-content-service] 2022-07-09 13:04:09,784 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac][NacosRestTemplate.java:476] - HTTP method: POST, url: http://117.50.181.29:8845/nacos/v1/cs/configs/listener, body: {Listening-Configs=content-service.propertiesxc-group3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deaccontent-servicexc-group3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deaccontent-service-dev.propertiesxc-group852a441d0c14021ba2c58a3c28d8b82f3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac, tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac}
+[xc-content-service] 2022-07-09 13:04:09,785 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@29528a22]
+[xc-content-service] 2022-07-09 13:04:09,973 WARN [Thread-2][HttpClientBeanHolder.java:108] - [HttpClientBeanHolder] Start destroying common HttpClient
+[xc-content-service] 2022-07-09 13:04:09,973 WARN [Thread-13][NotifyCenter.java:145] - [NotifyCenter] Start destroying Publisher
+[xc-content-service] 2022-07-09 13:04:09,973 WARN [Thread-13][NotifyCenter.java:162] - [NotifyCenter] Destruction of the end
+[xc-content-service] 2022-07-09 13:04:09,973 WARN [Thread-2][HttpClientBeanHolder.java:114] - [HttpClientBeanHolder] Destruction of the end
+[xc-content-service] 2022-07-09 13:04:09,974 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+[xc-content-service] 2022-07-09 13:04:09,976 INFO [SpringContextShutdownHook][BeatReactor.java:147] - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+[xc-content-service] 2022-07-09 13:04:09,977 INFO [SpringContextShutdownHook][BeatReactor.java:149] - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+[xc-content-service] 2022-07-09 13:04:09,977 INFO [SpringContextShutdownHook][HostReactor.java:409] - com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+[xc-content-service] 2022-07-09 13:04:10,256 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac][NacosRestTemplate.java:476] - HTTP method: POST, url: http://117.50.181.29:8845/nacos/v1/cs/configs/listener, body: {Listening-Configs=content-service.propertiesxc-group3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deaccontent-servicexc-group3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deaccontent-service-dev.propertiesxc-group852a441d0c14021ba2c58a3c28d8b82f3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac, tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac}
+[xc-content-service] 2022-07-09 13:04:10,256 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@29528a22]
+[xc-content-service] 2022-07-09 13:04:10,623 DEBUG [com.alibaba.nacos.client.naming.updater][NacosRestTemplate.java:476] - HTTP method: GET, url: http://117.50.181.29:8845/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac&clientIP=192.168.43.88&serviceName=xc-group%40%40content-service&udpPort=59074&clusters=DEFAULT, body: {}
+[xc-content-service] 2022-07-09 13:04:10,778 INFO [SpringContextShutdownHook][PushReceiver.java:121] - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+[xc-content-service] 2022-07-09 13:04:13,806 INFO [SpringContextShutdownHook][PushReceiver.java:125] - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+[xc-content-service] 2022-07-09 13:04:13,806 INFO [SpringContextShutdownHook][FailoverReactor.java:132] - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+[xc-content-service] 2022-07-09 13:04:16,826 INFO [SpringContextShutdownHook][FailoverReactor.java:134] - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+[xc-content-service] 2022-07-09 13:04:16,826 INFO [SpringContextShutdownHook][HostReactor.java:414] - com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+[xc-content-service] 2022-07-09 13:04:16,826 INFO [SpringContextShutdownHook][NamingProxy.java:719] - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+[xc-content-service] 2022-07-09 13:04:16,828 WARN [SpringContextShutdownHook][NamingHttpClientManager.java:72] - [NamingHttpClientManager] Start destroying NacosRestTemplate
+[xc-content-service] 2022-07-09 13:04:16,828 WARN [SpringContextShutdownHook][NamingHttpClientManager.java:79] - [NamingHttpClientManager] Destruction of the end
+[xc-content-service] 2022-07-09 13:04:16,828 INFO [SpringContextShutdownHook][CredentialWatcher.java:105] - [null] CredentialWatcher is stopped
+[xc-content-service] 2022-07-09 13:04:16,828 INFO [SpringContextShutdownHook][CredentialService.java:98] - [null] CredentialService is freed
+[xc-content-service] 2022-07-09 13:04:16,828 INFO [SpringContextShutdownHook][NamingProxy.java:723] - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+[xc-content-service] 2022-07-09 13:04:16,829 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+[xc-content-service] 2022-07-09 13:04:16,833 INFO [SpringContextShutdownHook][DruidDataSource.java:2003] - {dataSource-1} closing ...
+[xc-content-service] 2022-07-09 13:04:16,840 INFO [SpringContextShutdownHook][DruidDataSource.java:2075] - {dataSource-1} closed
+[xc-content-service] 2022-07-09 13:04:56,314 DEBUG [main][ApolloApplicationContextInitializer.java:77] - Apollo bootstrap config is not enabled for context org.springframework.context.annotation.AnnotationConfigApplicationContext@757f675c, started on Thu Jan 01 08:00:00 CST 1970, see property: ${apollo.bootstrap.enabled}
+[xc-content-service] 2022-07-09 13:04:56,752 INFO [main][LocalConfigInfoProcessor.java:212] - LOCAL_SNAPSHOT_PATH:C:\Users\26072\nacos\config
+[xc-content-service] 2022-07-09 13:04:56,904 DEBUG [main][NacosRestTemplate.java:476] - HTTP method: GET, url: http://117.50.181.29:8845/nacos/v1/cs/configs?dataId=mp-config.properties&tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac&group=xc-group, body: null
+[xc-content-service] 2022-07-09 13:04:56,905 DEBUG [main][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@31133b6e]
+[xc-content-service] 2022-07-09 13:04:56,906 INFO [main][Limiter.java:54] - limitTime:5.0
+[xc-content-service] 2022-07-09 13:04:57,017 INFO [main][JvmUtil.java:49] - isMultiInstance:false
+[xc-content-service] 2022-07-09 13:04:57,019 DEBUG [main][NacosPropertySourceBuilder.java:93] - Loading nacos data, dataId: 'mp-config.properties', group: 'xc-group', data: #驼峰下划线转换
+mybatis-plus.global-config.db-column-underline = true
+#实体扫描，多个package用逗号或者分号分隔
+mybatis-plus.typeAliasesPackage = com.xuecheng.*.entity
+#字段策略 0:"忽略判断",1:"非 NULL 判断"),2:"非空判断"
+mybatis-plus.global-config.field-strategy=2
+#全局地开启或关闭配置文件中的所有映射器已经配置的任何缓存，开发时不需要开启。
+mybatis-plus.configuration.cache-enabled = false
+#映射文件mapper文件存储位置
+mybatis-plus.mapper-locations = classpath:com.xuecheng.*.mapper/*.xml
+#主键类型  0:"数据库ID自增", 1:"用户输入ID",2:"全局唯一ID (数字类型唯一ID)", 3:"全局唯一ID UUID";
+mybatis-plus.global-config.id-type = 0
+#刷新mapper 调试神器
+mybatis-plus.global-config.refresh-mapper = true
+[xc-content-service] 2022-07-09 13:04:57,029 DEBUG [main][NacosRestTemplate.java:476] - HTTP method: GET, url: http://117.50.181.29:8845/nacos/v1/cs/configs?dataId=spring-http-config.properties&tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac&group=xc-group, body: null
+[xc-content-service] 2022-07-09 13:04:57,030 DEBUG [main][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@31133b6e]
+[xc-content-service] 2022-07-09 13:04:57,086 DEBUG [main][NacosPropertySourceBuilder.java:93] - Loading nacos data, dataId: 'spring-http-config.properties', group: 'xc-group', data: #srpingboot http 配置信息
+spring.http.encoding.enabled = true
+spring.http.encoding.charset = UTF-8
+spring.http.encoding.force = true
+server.use-forward-headers = true
+server.servlet.context-path = /
+server.port=8888
+[xc-content-service] 2022-07-09 13:04:57,087 DEBUG [main][NacosRestTemplate.java:476] - HTTP method: GET, url: http://117.50.181.29:8845/nacos/v1/cs/configs?dataId=spring-druid-config.properties&tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac&group=xc-group, body: null
+[xc-content-service] 2022-07-09 13:04:57,087 DEBUG [main][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@31133b6e]
+[xc-content-service] 2022-07-09 13:04:57,135 DEBUG [main][NacosPropertySourceBuilder.java:93] - Loading nacos data, dataId: 'spring-druid-config.properties', group: 'xc-group', data: #spring druid 配置信息
+spring.datasource.driver-class-name = com.mysql.jdbc.Driver
+spring.datasource.password = j3391111
+spring.datasource.username = root
+#初始化连接池的的连接数据量
+spring.datasource.druid.initial-size = 5
+#连接池最小连接数 
+spring.datasource.druid.min-idle = 5
+#获取连接等待超时时间 
+spring.datasource.druid.max-wait = 60000
+# 要启用PreparedStatementCache,必须配置大于0，当大于0时，poolPreparedStatements自动触发修改为true。
+spring.datasource.druid.max-pool-prepared-statement-per-connection-size = 20
+#连接池中最大激活连接数
+spring.datasource.druid.max-active = 20
+[xc-content-service] 2022-07-09 13:04:57,137 DEBUG [main][NacosRestTemplate.java:476] - HTTP method: GET, url: http://117.50.181.29:8845/nacos/v1/cs/configs?dataId=content-service&tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac&group=xc-group, body: null
+[xc-content-service] 2022-07-09 13:04:57,137 DEBUG [main][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@31133b6e]
+[xc-content-service] 2022-07-09 13:04:57,195 WARN [main][NacosPropertySourceBuilder.java:87] - Ignore the empty nacos configuration and get it based on dataId[content-service] & group[xc-group]
+[xc-content-service] 2022-07-09 13:04:57,195 DEBUG [main][NacosRestTemplate.java:476] - HTTP method: GET, url: http://117.50.181.29:8845/nacos/v1/cs/configs?dataId=content-service.properties&tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac&group=xc-group, body: null
+[xc-content-service] 2022-07-09 13:04:57,195 DEBUG [main][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@31133b6e]
+[xc-content-service] 2022-07-09 13:04:57,264 WARN [main][NacosPropertySourceBuilder.java:87] - Ignore the empty nacos configuration and get it based on dataId[content-service.properties] & group[xc-group]
+[xc-content-service] 2022-07-09 13:04:57,264 DEBUG [main][NacosRestTemplate.java:476] - HTTP method: GET, url: http://117.50.181.29:8845/nacos/v1/cs/configs?dataId=content-service-dev.properties&tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac&group=xc-group, body: null
+[xc-content-service] 2022-07-09 13:04:57,265 DEBUG [main][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@31133b6e]
+[xc-content-service] 2022-07-09 13:04:57,308 DEBUG [main][NacosPropertySourceBuilder.java:93] - Loading nacos data, dataId: 'content-service-dev.properties', group: 'xc-group', data: #spring http 配置信息
+server.servlet.context-path = /content
+server.port=63040
+
+
+#spring druid 配置信息
+spring.datasource.url = jdbc:mysql://117.50.181.29:3306/xc_content?userUnicode=true&useSSL=false&characterEncoding=utf8
+
+# 全局逻辑删除的实体字段名
+mybatis-plus.global-config.db-config.logic-delete-field = status
+# 逻辑已删除值(默认为0)  
+mybatis-plus.global-config.db-config.logic-delete-value = 0 
+# 逻辑未删除值(默认为1)
+mybatis-plus.global-config.db-config.logic-not-delete-value = 1 
+
+
+[xc-content-service] 2022-07-09 13:04:57,309 INFO [main][PropertySourceBootstrapConfiguration.java:112] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-content-service-dev.properties,xc-group'}, BootstrapPropertySource {name='bootstrapProperties-content-service.properties,xc-group'}, BootstrapPropertySource {name='bootstrapProperties-content-service,xc-group'}, BootstrapPropertySource {name='bootstrapProperties-spring-druid-config.properties,xc-group'}, BootstrapPropertySource {name='bootstrapProperties-spring-http-config.properties,xc-group'}, BootstrapPropertySource {name='bootstrapProperties-mp-config.properties,xc-group'}]
+[xc-content-service] 2022-07-09 13:04:57,333 DEBUG [main][ApolloApplicationContextInitializer.java:77] - Apollo bootstrap config is not enabled for context org.springframework.web.context.support.GenericWebApplicationContext@3b05a99b, started on Thu Jan 01 08:00:00 CST 1970, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@757f675c, see property: ${apollo.bootstrap.enabled}
+[xc-content-service] 2022-07-09 13:04:57,340 INFO [main][SpringApplication.java:655] - The following profiles are active: dev
+[xc-content-service] 2022-07-09 13:04:57,905 DEBUG [main][LogFactory.java:105] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[xc-content-service] 2022-07-09 13:04:57,965 INFO [main][GenericScope.java:295] - BeanFactory id=051895e6-16a4-3f55-b11a-5907148a7b65
+[xc-content-service] 2022-07-09 13:04:58,239 INFO [main][DruidDataSourceAutoConfigure.java:56] - Init DruidDataSource
+[xc-content-service] 2022-07-09 13:05:01,101 INFO [main][DruidDataSource.java:1010] - {dataSource-1} inited
+[xc-content-service] 2022-07-09 13:05:01,146 DEBUG [main][Logger.java:49] - Registered plugin: 'com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor@3312f4f4'
+[xc-content-service] 2022-07-09 13:05:01,148 DEBUG [main][Logger.java:49] - Property 'mapperLocations' was not specified.
+[xc-content-service] 2022-07-09 13:05:01,504 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseBaseMapper.insert
+[xc-content-service] 2022-07-09 13:05:01,508 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseBaseMapper.delete
+[xc-content-service] 2022-07-09 13:05:01,510 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseBaseMapper.deleteByMap
+[xc-content-service] 2022-07-09 13:05:01,530 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseBaseMapper.deleteById
+[xc-content-service] 2022-07-09 13:05:01,531 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseBaseMapper.deleteBatchIds
+[xc-content-service] 2022-07-09 13:05:01,534 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseBaseMapper.update
+[xc-content-service] 2022-07-09 13:05:01,535 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseBaseMapper.updateById
+[xc-content-service] 2022-07-09 13:05:01,536 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseBaseMapper.selectById
+[xc-content-service] 2022-07-09 13:05:01,537 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseBaseMapper.selectBatchIds
+[xc-content-service] 2022-07-09 13:05:01,538 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseBaseMapper.selectByMap
+[xc-content-service] 2022-07-09 13:05:01,540 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseBaseMapper.selectOne
+[xc-content-service] 2022-07-09 13:05:01,541 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseBaseMapper.selectCount
+[xc-content-service] 2022-07-09 13:05:01,543 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseBaseMapper.selectMaps
+[xc-content-service] 2022-07-09 13:05:01,545 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseBaseMapper.selectMapsPage
+[xc-content-service] 2022-07-09 13:05:01,546 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseBaseMapper.selectObjs
+[xc-content-service] 2022-07-09 13:05:01,547 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseBaseMapper.selectList
+[xc-content-service] 2022-07-09 13:05:01,550 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseBaseMapper.selectPage
+[xc-content-service] 2022-07-09 13:05:01,573 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseMarketMapper.insert
+[xc-content-service] 2022-07-09 13:05:01,574 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseMarketMapper.delete
+[xc-content-service] 2022-07-09 13:05:01,576 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseMarketMapper.deleteByMap
+[xc-content-service] 2022-07-09 13:05:01,577 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseMarketMapper.deleteById
+[xc-content-service] 2022-07-09 13:05:01,578 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseMarketMapper.deleteBatchIds
+[xc-content-service] 2022-07-09 13:05:01,579 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseMarketMapper.update
+[xc-content-service] 2022-07-09 13:05:01,580 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseMarketMapper.updateById
+[xc-content-service] 2022-07-09 13:05:01,580 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseMarketMapper.selectById
+[xc-content-service] 2022-07-09 13:05:01,581 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseMarketMapper.selectBatchIds
+[xc-content-service] 2022-07-09 13:05:01,582 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseMarketMapper.selectByMap
+[xc-content-service] 2022-07-09 13:05:01,583 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseMarketMapper.selectOne
+[xc-content-service] 2022-07-09 13:05:01,584 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseMarketMapper.selectCount
+[xc-content-service] 2022-07-09 13:05:01,585 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseMarketMapper.selectMaps
+[xc-content-service] 2022-07-09 13:05:01,586 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseMarketMapper.selectMapsPage
+[xc-content-service] 2022-07-09 13:05:01,588 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseMarketMapper.selectObjs
+[xc-content-service] 2022-07-09 13:05:01,589 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseMarketMapper.selectList
+[xc-content-service] 2022-07-09 13:05:01,591 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseMarketMapper.selectPage
+[xc-content-service] 2022-07-09 13:05:01,635 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CoursePubMapper.insert
+[xc-content-service] 2022-07-09 13:05:01,637 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CoursePubMapper.delete
+[xc-content-service] 2022-07-09 13:05:01,638 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CoursePubMapper.deleteByMap
+[xc-content-service] 2022-07-09 13:05:01,639 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CoursePubMapper.deleteById
+[xc-content-service] 2022-07-09 13:05:01,639 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CoursePubMapper.deleteBatchIds
+[xc-content-service] 2022-07-09 13:05:01,641 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CoursePubMapper.update
+[xc-content-service] 2022-07-09 13:05:01,642 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CoursePubMapper.updateById
+[xc-content-service] 2022-07-09 13:05:01,642 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CoursePubMapper.selectById
+[xc-content-service] 2022-07-09 13:05:01,644 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CoursePubMapper.selectBatchIds
+[xc-content-service] 2022-07-09 13:05:01,645 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CoursePubMapper.selectByMap
+[xc-content-service] 2022-07-09 13:05:01,648 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CoursePubMapper.selectOne
+[xc-content-service] 2022-07-09 13:05:01,650 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CoursePubMapper.selectCount
+[xc-content-service] 2022-07-09 13:05:01,651 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CoursePubMapper.selectMaps
+[xc-content-service] 2022-07-09 13:05:01,653 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CoursePubMapper.selectMapsPage
+[xc-content-service] 2022-07-09 13:05:01,656 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CoursePubMapper.selectObjs
+[xc-content-service] 2022-07-09 13:05:01,659 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CoursePubMapper.selectList
+[xc-content-service] 2022-07-09 13:05:01,661 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CoursePubMapper.selectPage
+[xc-content-service] 2022-07-09 13:05:01,687 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseTeacherMapper.insert
+[xc-content-service] 2022-07-09 13:05:01,688 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseTeacherMapper.delete
+[xc-content-service] 2022-07-09 13:05:01,691 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseTeacherMapper.deleteByMap
+[xc-content-service] 2022-07-09 13:05:01,694 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseTeacherMapper.deleteById
+[xc-content-service] 2022-07-09 13:05:01,696 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseTeacherMapper.deleteBatchIds
+[xc-content-service] 2022-07-09 13:05:01,698 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseTeacherMapper.update
+[xc-content-service] 2022-07-09 13:05:01,699 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseTeacherMapper.updateById
+[xc-content-service] 2022-07-09 13:05:01,699 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseTeacherMapper.selectById
+[xc-content-service] 2022-07-09 13:05:01,701 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseTeacherMapper.selectBatchIds
+[xc-content-service] 2022-07-09 13:05:01,702 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseTeacherMapper.selectByMap
+[xc-content-service] 2022-07-09 13:05:01,704 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseTeacherMapper.selectOne
+[xc-content-service] 2022-07-09 13:05:01,706 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseTeacherMapper.selectCount
+[xc-content-service] 2022-07-09 13:05:01,708 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseTeacherMapper.selectMaps
+[xc-content-service] 2022-07-09 13:05:01,710 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseTeacherMapper.selectMapsPage
+[xc-content-service] 2022-07-09 13:05:01,713 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseTeacherMapper.selectObjs
+[xc-content-service] 2022-07-09 13:05:01,715 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseTeacherMapper.selectList
+[xc-content-service] 2022-07-09 13:05:01,717 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.CourseTeacherMapper.selectPage
+[xc-content-service] 2022-07-09 13:05:01,765 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.selectMaxOrderby
+[xc-content-service] 2022-07-09 13:05:01,771 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.insert
+[xc-content-service] 2022-07-09 13:05:01,775 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.delete
+[xc-content-service] 2022-07-09 13:05:01,778 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.deleteByMap
+[xc-content-service] 2022-07-09 13:05:01,780 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.deleteById
+[xc-content-service] 2022-07-09 13:05:01,781 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.deleteBatchIds
+[xc-content-service] 2022-07-09 13:05:01,784 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.update
+[xc-content-service] 2022-07-09 13:05:01,786 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.updateById
+[xc-content-service] 2022-07-09 13:05:01,786 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.selectById
+[xc-content-service] 2022-07-09 13:05:01,788 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.selectBatchIds
+[xc-content-service] 2022-07-09 13:05:01,789 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.selectByMap
+[xc-content-service] 2022-07-09 13:05:01,790 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.selectOne
+[xc-content-service] 2022-07-09 13:05:01,791 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.selectCount
+[xc-content-service] 2022-07-09 13:05:01,792 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.selectMaps
+[xc-content-service] 2022-07-09 13:05:01,793 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.selectMapsPage
+[xc-content-service] 2022-07-09 13:05:01,794 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.selectObjs
+[xc-content-service] 2022-07-09 13:05:01,795 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.selectList
+[xc-content-service] 2022-07-09 13:05:01,797 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMapper.selectPage
+[xc-content-service] 2022-07-09 13:05:01,823 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMediaMapper.insert
+[xc-content-service] 2022-07-09 13:05:01,825 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMediaMapper.delete
+[xc-content-service] 2022-07-09 13:05:01,825 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMediaMapper.deleteByMap
+[xc-content-service] 2022-07-09 13:05:01,826 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMediaMapper.deleteById
+[xc-content-service] 2022-07-09 13:05:01,827 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMediaMapper.deleteBatchIds
+[xc-content-service] 2022-07-09 13:05:01,828 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMediaMapper.update
+[xc-content-service] 2022-07-09 13:05:01,829 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMediaMapper.updateById
+[xc-content-service] 2022-07-09 13:05:01,829 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMediaMapper.selectById
+[xc-content-service] 2022-07-09 13:05:01,830 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMediaMapper.selectBatchIds
+[xc-content-service] 2022-07-09 13:05:01,831 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMediaMapper.selectByMap
+[xc-content-service] 2022-07-09 13:05:01,832 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMediaMapper.selectOne
+[xc-content-service] 2022-07-09 13:05:01,834 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMediaMapper.selectCount
+[xc-content-service] 2022-07-09 13:05:01,835 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMediaMapper.selectMaps
+[xc-content-service] 2022-07-09 13:05:01,835 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMediaMapper.selectMapsPage
+[xc-content-service] 2022-07-09 13:05:01,836 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMediaMapper.selectObjs
+[xc-content-service] 2022-07-09 13:05:01,837 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMediaMapper.selectList
+[xc-content-service] 2022-07-09 13:05:01,839 DEBUG [main][MybatisConfiguration.java:128] - addMappedStatement: com.xuecheng.content.mapper.TeachplanMediaMapper.selectPage
+[xc-content-service] 2022-07-09 13:05:02,371 INFO [main][PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[xc-content-service] 2022-07-09 13:05:02,519 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[xc-content-service] 2022-07-09 13:05:02,520 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[xc-content-service] 2022-07-09 13:05:02,526 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[xc-content-service] 2022-07-09 13:05:02,526 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[xc-content-service] 2022-07-09 13:05:02,561 DEBUG [main][ResourceBundleMessageInterpolator.java:172] - Loaded expression factory via original TCCL
+[xc-content-service] 2022-07-09 13:05:02,571 DEBUG [main][AbstractConfigurationImpl.java:171] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+[xc-content-service] 2022-07-09 13:05:02,572 DEBUG [main][AbstractConfigurationImpl.java:203] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+[xc-content-service] 2022-07-09 13:05:02,572 DEBUG [main][AbstractConfigurationImpl.java:217] - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+[xc-content-service] 2022-07-09 13:05:02,574 DEBUG [main][ValidationXmlParser.java:120] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+[xc-content-service] 2022-07-09 13:05:02,575 DEBUG [main][ResourceLoaderHelper.java:53] - Trying to load META-INF/validation.xml via user class loader
+[xc-content-service] 2022-07-09 13:05:02,575 DEBUG [main][ResourceLoaderHelper.java:60] - Trying to load META-INF/validation.xml via TCCL
+[xc-content-service] 2022-07-09 13:05:02,576 DEBUG [main][ResourceLoaderHelper.java:66] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+[xc-content-service] 2022-07-09 13:05:02,576 DEBUG [main][ValidationXmlParser.java:127] - No META-INF/validation.xml found. Using annotation based configuration only.
+[xc-content-service] 2022-07-09 13:05:02,577 DEBUG [main][TraversableResolvers.java:60] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+[xc-content-service] 2022-07-09 13:05:02,579 DEBUG [main][ValidatorFactoryConfigurationHelper.java:300] - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+[xc-content-service] 2022-07-09 13:05:02,580 DEBUG [main][ValidatorFactoryConfigurationHelper.java:375] - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+[xc-content-service] 2022-07-09 13:05:02,580 DEBUG [main][ValidatorFactoryConfigurationHelper.java:376] - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+[xc-content-service] 2022-07-09 13:05:02,581 DEBUG [main][ValidatorFactoryConfigurationHelper.java:377] - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+[xc-content-service] 2022-07-09 13:05:02,581 DEBUG [main][ValidatorFactoryConfigurationHelper.java:378] - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+[xc-content-service] 2022-07-09 13:05:02,581 DEBUG [main][ValidatorFactoryConfigurationHelper.java:379] - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+[xc-content-service] 2022-07-09 13:05:02,717 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
+[xc-content-service] 2022-07-09 13:05:03,209 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+[xc-content-service] 2022-07-09 13:05:03,409 WARN [main][FreeMarkerAutoConfiguration.java:67] - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+[xc-content-service] 2022-07-09 13:05:03,998 INFO [main][InitUtils.java:65] - initializer namespace from System Property :null
+[xc-content-service] 2022-07-09 13:05:03,998 INFO [main][InitUtils.java:74] - initializer namespace from System Environment :null
+[xc-content-service] 2022-07-09 13:05:03,998 INFO [main][InitUtils.java:84] - initializer namespace from System Property :null
+[xc-content-service] 2022-07-09 13:05:04,004 DEBUG [com.alibaba.nacos.client.naming.updater][NamingProxy.java:195] - server list provided by user: [117.50.181.29:8845]
+[xc-content-service] 2022-07-09 13:05:04,005 DEBUG [main][NamingProxy.java:195] - server list provided by user: [117.50.181.29:8845]
+[xc-content-service] 2022-07-09 13:05:04,009 DEBUG [com.alibaba.nacos.naming.failover][FailoverReactor.java:147] - failover switch is not found, failover00-00---000-VIPSRV_FAILOVER_SWITCH-000---00-00
+[xc-content-service] 2022-07-09 13:05:04,022 DEBUG [main][HostReactor.java:302] - failover-mode: false
+[xc-content-service] 2022-07-09 13:05:04,023 DEBUG [main][NacosRestTemplate.java:476] - HTTP method: GET, url: http://117.50.181.29:8845/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac&clientIP=192.168.43.88&serviceName=xc-group%40%40content-service&udpPort=57321&clusters=DEFAULT, body: {}
+[xc-content-service] 2022-07-09 13:05:04,174 INFO [main][DocumentationPluginsBootstrapper.java:160] - Context refreshed
+[xc-content-service] 2022-07-09 13:05:04,182 INFO [main][DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
+[xc-content-service] 2022-07-09 13:05:04,207 INFO [main][ApiListingReferenceScanner.java:41] - Scanning for api listing references
+[xc-content-service] 2022-07-09 13:05:04,332 INFO [main][StartupInfoLogger.java:61] - Started TestTechPlanTreeNodes in 8.522 seconds (JVM running for 9.518)
+[xc-content-service] 2022-07-09 13:05:04,335 INFO [main][ClientWorker.java:239] - [fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac] [subscribe] content-service.properties+xc-group+3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac
+[xc-content-service] 2022-07-09 13:05:04,336 INFO [main][CacheData.java:93] - [fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac] [add-listener] ok, tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac, dataId=content-service.properties, group=xc-group, cnt=1
+[xc-content-service] 2022-07-09 13:05:04,337 INFO [main][ClientWorker.java:239] - [fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac] [subscribe] content-service-dev.properties+xc-group+3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac
+[xc-content-service] 2022-07-09 13:05:04,337 INFO [main][CacheData.java:93] - [fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac] [add-listener] ok, tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac, dataId=content-service-dev.properties, group=xc-group, cnt=1
+[xc-content-service] 2022-07-09 13:05:04,337 INFO [main][ClientWorker.java:239] - [fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac] [subscribe] content-service+xc-group+3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac
+[xc-content-service] 2022-07-09 13:05:04,337 INFO [main][CacheData.java:93] - [fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac] [add-listener] ok, tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac, dataId=content-service, group=xc-group, cnt=1
+[xc-content-service] 2022-07-09 13:05:04,339 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac][NacosRestTemplate.java:476] - HTTP method: POST, url: http://117.50.181.29:8845/nacos/v1/cs/configs/listener, body: {Listening-Configs=content-service.propertiesxc-group3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deaccontent-servicexc-group3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deaccontent-service-dev.propertiesxc-group852a441d0c14021ba2c58a3c28d8b82f3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac, tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac}
+[xc-content-service] 2022-07-09 13:05:04,340 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@31133b6e]
+[xc-content-service] 2022-07-09 13:05:04,416 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac][NacosRestTemplate.java:476] - HTTP method: POST, url: http://117.50.181.29:8845/nacos/v1/cs/configs/listener, body: {Listening-Configs=content-service.propertiesxc-group3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deaccontent-servicexc-group3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deaccontent-service-dev.propertiesxc-group852a441d0c14021ba2c58a3c28d8b82f3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac, tenant=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac}
+[xc-content-service] 2022-07-09 13:05:04,416 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-117.50.181.29_8845-3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@31133b6e]
+[xc-content-service] 2022-07-09 13:05:04,506 DEBUG [main][BaseJdbcLogger.java:137] - ==>  Preparing: select max(orderby) from teachplan where parentid=? and grade=?
+[xc-content-service] 2022-07-09 13:05:04,521 DEBUG [main][BaseJdbcLogger.java:137] - ==> Parameters: 19(Long), 2(Integer)
+[xc-content-service] 2022-07-09 13:05:04,570 DEBUG [main][BaseJdbcLogger.java:137] - <==      Total: 1
+[xc-content-service] 2022-07-09 13:05:04,572 DEBUG [main][PreparedStatementPool.java:129] - stmt enter cache
+[xc-content-service] 2022-07-09 13:05:04,585 WARN [Thread-2][HttpClientBeanHolder.java:108] - [HttpClientBeanHolder] Start destroying common HttpClient
+[xc-content-service] 2022-07-09 13:05:04,585 WARN [Thread-13][NotifyCenter.java:145] - [NotifyCenter] Start destroying Publisher
+[xc-content-service] 2022-07-09 13:05:04,585 WARN [Thread-13][NotifyCenter.java:162] - [NotifyCenter] Destruction of the end
+[xc-content-service] 2022-07-09 13:05:04,585 WARN [Thread-2][HttpClientBeanHolder.java:114] - [HttpClientBeanHolder] Destruction of the end
+[xc-content-service] 2022-07-09 13:05:04,586 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+[xc-content-service] 2022-07-09 13:05:04,588 INFO [SpringContextShutdownHook][BeatReactor.java:147] - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+[xc-content-service] 2022-07-09 13:05:04,588 INFO [SpringContextShutdownHook][BeatReactor.java:149] - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+[xc-content-service] 2022-07-09 13:05:04,588 INFO [SpringContextShutdownHook][HostReactor.java:409] - com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+[xc-content-service] 2022-07-09 13:05:05,186 DEBUG [com.alibaba.nacos.client.naming.updater][NacosRestTemplate.java:476] - HTTP method: GET, url: http://117.50.181.29:8845/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=3e6cda34-a5c7-4ff4-a1ac-4a88e4a3deac&clientIP=192.168.43.88&serviceName=xc-group%40%40content-service&udpPort=57321&clusters=DEFAULT, body: {}
+[xc-content-service] 2022-07-09 13:05:05,296 INFO [SpringContextShutdownHook][PushReceiver.java:121] - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+[xc-content-service] 2022-07-09 13:05:08,314 INFO [SpringContextShutdownHook][PushReceiver.java:125] - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+[xc-content-service] 2022-07-09 13:05:08,315 INFO [SpringContextShutdownHook][FailoverReactor.java:132] - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+[xc-content-service] 2022-07-09 13:05:11,336 INFO [SpringContextShutdownHook][FailoverReactor.java:134] - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+[xc-content-service] 2022-07-09 13:05:11,337 INFO [SpringContextShutdownHook][HostReactor.java:414] - com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+[xc-content-service] 2022-07-09 13:05:11,337 INFO [SpringContextShutdownHook][NamingProxy.java:719] - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+[xc-content-service] 2022-07-09 13:05:11,339 WARN [SpringContextShutdownHook][NamingHttpClientManager.java:72] - [NamingHttpClientManager] Start destroying NacosRestTemplate
+[xc-content-service] 2022-07-09 13:05:11,339 WARN [SpringContextShutdownHook][NamingHttpClientManager.java:79] - [NamingHttpClientManager] Destruction of the end
+[xc-content-service] 2022-07-09 13:05:11,340 INFO [SpringContextShutdownHook][CredentialWatcher.java:105] - [null] CredentialWatcher is stopped
+[xc-content-service] 2022-07-09 13:05:11,340 INFO [SpringContextShutdownHook][CredentialService.java:98] - [null] CredentialService is freed
+[xc-content-service] 2022-07-09 13:05:11,340 INFO [SpringContextShutdownHook][NamingProxy.java:723] - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+[xc-content-service] 2022-07-09 13:05:11,341 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+[xc-content-service] 2022-07-09 13:05:11,348 INFO [SpringContextShutdownHook][DruidDataSource.java:2003] - {dataSource-1} closing ...
+[xc-content-service] 2022-07-09 13:05:11,351 DEBUG [SpringContextShutdownHook][PreparedStatementPool.java:160] - stmt exit cache
+[xc-content-service] 2022-07-09 13:05:11,353 INFO [SpringContextShutdownHook][DruidDataSource.java:2075] - {dataSource-1} closed

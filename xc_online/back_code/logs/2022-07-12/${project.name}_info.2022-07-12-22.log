@@ -1,0 +1,25 @@
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 22:39:58,838 INFO [main][StartupInfoLogger.java:55] - Starting FarmingBootstrap on codeXie with PID 29372 (D:\javaProject\javaProject\xc_online\farming-master\target\classes started by 26072 in D:\javaProject\javaProject\xc_online\back_code)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 22:39:58,866 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 22:39:59,489 INFO [main][PostProcessorRegistrationDelegate.java:335] - Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 22:39:59,522 INFO [main][PostProcessorRegistrationDelegate.java:335] - Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 22:39:59,527 INFO [main][PostProcessorRegistrationDelegate.java:335] - Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 22:39:59,664 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 56082 (http)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 22:39:59,691 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-56082"]
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 22:39:59,692 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 22:39:59,692 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.37]
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 22:39:59,754 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 22:39:59,754 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 863 ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 22:39:59,974 INFO [main][DruidDataSourceAutoConfigure.java:56] - Init DruidDataSource
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 22:40:02,339 INFO [main][DruidDataSource.java:1010] - {dataSource-1} inited
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 22:40:02,687 INFO [main][EndpointLinksResolver.java:58] - Exposing 2 endpoint(s) beneath base path '/actuator'
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 22:40:02,725 INFO [main][PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 22:40:02,770 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 22:40:02,918 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-56082"]
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 22:40:02,930 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 56082 (http) with context path '/farming'
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 22:40:02,931 INFO [main][DocumentationPluginsBootstrapper.java:160] - Context refreshed
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 22:40:02,946 INFO [main][DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 22:40:02,964 INFO [main][ApiListingReferenceScanner.java:41] - Scanning for api listing references
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 22:40:03,093 INFO [main][StartupInfoLogger.java:61] - Started FarmingBootstrap in 4.468 seconds (JVM running for 5.308)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 22:40:03,468 INFO [RMI TCP Connection(7)-192.168.43.88][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 22:40:03,468 INFO [RMI TCP Connection(7)-192.168.43.88][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 22:40:03,472 INFO [RMI TCP Connection(7)-192.168.43.88][FrameworkServlet.java:547] - Completed initialization in 4 ms

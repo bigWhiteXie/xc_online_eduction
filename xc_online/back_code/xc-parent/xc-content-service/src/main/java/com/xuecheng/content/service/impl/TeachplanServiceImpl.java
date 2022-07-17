@@ -63,18 +63,23 @@ public class TeachplanServiceImpl extends ServiceImpl<TeachplanMapper, Teachplan
        // 2.校验业务参数
          //     该courseId对应的courseBase必须存在
          //     companyId必须一致
-        CourseBaseDTO base = courseBaseService.getCourseBaseById(courseId);
+        CourseBaseDTO base = courseBaseService.getCourseBaseById(courseId,companyId);
 
         //3. 查询该courseId对应的teachplan，并按照grade和oderby排序
         List<Teachplan> list = this.lambdaQuery().eq(Teachplan::getCourseId, courseId).
                 orderByAsc(Teachplan::getGrade, Teachplan::getOrderby).list();
          // 3.1 取出根节点转化成treenode
-        Teachplan teachplan = list.get(0);
-        TeachPlanTreeNode rootNode = new TeachPlanTreeNode(teachplan);
+        TeachPlanTreeNode rootNode = null;
+        //  3.2 判断当前课程是否存在teachPlan
+        if(list.isEmpty()){ //若没有，则返回默认数据
+            rootNode = new TeachPlanTreeNode();
+        }else { //若存在则通过
+            Teachplan teachplan = list.get(0);
+            rootNode = new TeachPlanTreeNode(teachplan);
 
-        List<TeachPlanTreeNode> childs = generatorTreeNodes(list, rootNode.getId());
-        rootNode.setTeachPlanTreeNodes(childs);
-
+            List<TeachPlanTreeNode> childs = generatorTreeNodes(list, rootNode.getId());
+            rootNode.setTeachPlanTreeNodes(childs);
+        }
         //4.将treeNode转化成dto
         TeachplanDTO dto = TeachPlanConvert.INSTANCE.node2dto(rootNode);
         return dto;
@@ -294,6 +299,12 @@ public class TeachplanServiceImpl extends ServiceImpl<TeachplanMapper, Teachplan
 
     }
 
+    /**
+     * 根据parentId生成树形结构
+     * @param list
+     * @param parentId
+     * @return
+     */
     private List<TeachPlanTreeNode> generatorTreeNodes(List<Teachplan> list, Long parentId){
         ArrayList<TeachPlanTreeNode> treeNodes = new ArrayList<>();
         for (Teachplan item : list) {
@@ -302,6 +313,14 @@ public class TeachplanServiceImpl extends ServiceImpl<TeachplanMapper, Teachplan
                 treeNodes.add(node);
                 if(node.getGrade() != 3){
                     node.setTeachPlanTreeNodes(generatorTreeNodes(list,node.getId()));
+                }else{ //若是三级节点，这查询其对应的媒资信息
+                    TeachplanMedia teachplanMedia = teachplanMediaService.lambdaQuery().
+                            eq(TeachplanMedia::getCourseId, node.getCourseId()).
+                            eq(TeachplanMedia::getTeachplanId, node.getId()).
+                            one();
+                    if(!ObjectUtils.isEmpty(teachplanMedia)){ //若媒资信息不能空则写入节点
+                        node.setTeachplanMedia(teachplanMedia);
+                    }
                 }
             }
         }

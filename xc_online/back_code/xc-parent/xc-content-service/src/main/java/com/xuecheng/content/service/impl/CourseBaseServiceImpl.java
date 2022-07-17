@@ -22,10 +22,13 @@ import com.xuecheng.content.convert.CourseBaseConvert;
 import com.xuecheng.content.entity.CourseBase;
 import com.xuecheng.content.entity.CourseMarket;
 import com.xuecheng.content.mapper.CourseBaseMapper;
+import com.xuecheng.content.properties.QiNiuProperties;
 import com.xuecheng.content.service.CourseBaseService;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang.RandomStringUtils;
 import org.mapstruct.ap.internal.model.assignment.UpdateWrapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.CollectionUtils;
@@ -33,8 +36,7 @@ import org.springframework.util.ObjectUtils;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 
 import java.math.BigDecimal;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 /**
  * <p>
@@ -81,6 +83,7 @@ public class CourseBaseServiceImpl extends ServiceImpl<CourseBaseMapper, CourseB
           }
         Long pageNo = pageRequestParams.getPageNo();
         Integer pageSize = pageRequestParams.getPageSize();
+
 
         // 3.构建page分页对象
         Page<CourseBase> page = new Page<>(pageNo, pageSize);
@@ -141,6 +144,8 @@ public class CourseBaseServiceImpl extends ServiceImpl<CourseBaseMapper, CourseB
 
         //3.用dto创建CourseBase和CourseMarket对象并插入数据库
         CourseBase courseBase = CourseBaseConvert.INSTANCE.dto2entity(dto);
+
+
         boolean saveIsSuccess = this.save(courseBase);
         if(!saveIsSuccess){
             throw new RuntimeException("课程添加失败");
@@ -179,9 +184,8 @@ public class CourseBaseServiceImpl extends ServiceImpl<CourseBaseMapper, CourseB
      * @return
      */
     @Override
-    public CourseBaseDTO getCourseBaseById(Long courseBaseId) {
+    public CourseBaseDTO getCourseBaseById(Long courseBaseId,Long companyId) {
         //1.获得companyId
-        Long companyId = SecurityUtil.getCompanyId();
 
         //2.利用companyId和courseBaseId查询courseBase和courseMarket数据
         CourseBase courseBase = this.getById(courseBaseId);
@@ -308,5 +312,35 @@ public class CourseBaseServiceImpl extends ServiceImpl<CourseBaseMapper, CourseB
 
         //5.返回逻辑删除是否成功
         return remove;
+    }
+
+    /**
+     * 1.校验业务数据
+     *      courseBase是否存在
+     *      companyId是否一致
+     *      审核状态必须为未提交
+     * 2.修改审核状态
+     * @param courseBaseId
+     * @param companyId
+     * @return
+     */
+    @Transactional
+    @Override
+    public boolean commitCourse(Long courseBaseId, Long companyId) {
+        //1.校验courseBase以及companyId
+        CourseBaseDTO baseDTO = getCourseBaseById(courseBaseId,companyId);
+
+        //2.校验审核状态，只能对审核未提交和未通过的课程进行修改
+        String auditStatus = baseDTO.getAuditStatus();
+        if(!auditStatus.equals(CourseAuditEnum.AUDIT_UNPAST_STATUS.getCode()) && ! auditStatus.equals(CourseAuditEnum.AUDIT_DISPAST_STATUS.getCode())){
+            ExceptionCast.cast(ContentErrorCode.E_120014);
+        }
+
+        //3.修改课程审核状态
+        boolean update = this.lambdaUpdate().eq(CourseBase::getId, baseDTO.getCourseBaseId()).set(CourseBase::getAuditStatus, CourseAuditEnum.AUDIT_COMMIT_STATUS.getCode()).update();
+        if(!update){
+            ExceptionCast.cast(ContentErrorCode.E_120017);
+        }
+        return true;
     }
 }

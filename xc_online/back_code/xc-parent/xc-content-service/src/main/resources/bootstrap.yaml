@@ -23,6 +23,10 @@ spring:
             group: ${dev.group}
           - dataId: spring-druid-config.properties
             group: ${dev.group}
+          - dataId: feign-config.properties
+            group: ${group.name}
+          - dataId: ribbon-config.properties
+            group: ${group.name}
   profiles:
     active: dev     #开启开发环境配置
 

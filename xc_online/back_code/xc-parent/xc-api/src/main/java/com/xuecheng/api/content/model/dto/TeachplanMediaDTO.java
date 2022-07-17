@@ -20,8 +20,9 @@ public class TeachplanMediaDTO implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+
     @ApiModelProperty(value = "主键")
-    private Long id;
+    private Long teachplanMediaId;
 
     @ApiModelProperty(value = "媒资信息标识")
     private Long mediaId;
@@ -37,14 +38,6 @@ public class TeachplanMediaDTO implements Serializable {
 
     @ApiModelProperty(value = "媒资文件原始名称")
     private String mediaFilename;
-
-    private LocalDateTime createDate;
-
-    @ApiModelProperty(value = "创建人")
-    private String createPeople;
-
-    @ApiModelProperty(value = "修改人")
-    private String changePeople;
 
 
 }

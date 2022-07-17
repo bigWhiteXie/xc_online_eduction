@@ -1,0 +1,52 @@
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:17:48,734 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:17:49,079 INFO [main][GenericScope.java:295] - BeanFactory id=3e161c52-59cd-3100-adc4-d640ad1ce448
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:17:49,110 INFO [main][PostProcessorRegistrationDelegate.java:335] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:17:49,118 INFO [main][PostProcessorRegistrationDelegate.java:335] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:17:49,119 INFO [main][PostProcessorRegistrationDelegate.java:335] - Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:17:49,189 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:17:49,189 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:17:49,189 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:17:49,204 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:17:49,838 INFO [main][RouteDefinitionRouteLocator.java:139] - Loaded RoutePredicateFactory [After]
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:17:49,838 INFO [main][RouteDefinitionRouteLocator.java:139] - Loaded RoutePredicateFactory [Before]
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:17:49,838 INFO [main][RouteDefinitionRouteLocator.java:139] - Loaded RoutePredicateFactory [Between]
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:17:49,838 INFO [main][RouteDefinitionRouteLocator.java:139] - Loaded RoutePredicateFactory [Cookie]
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:17:49,838 INFO [main][RouteDefinitionRouteLocator.java:139] - Loaded RoutePredicateFactory [Header]
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:17:49,838 INFO [main][RouteDefinitionRouteLocator.java:139] - Loaded RoutePredicateFactory [Host]
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:17:49,838 INFO [main][RouteDefinitionRouteLocator.java:139] - Loaded RoutePredicateFactory [Method]
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:17:49,838 INFO [main][RouteDefinitionRouteLocator.java:139] - Loaded RoutePredicateFactory [Path]
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:17:49,838 INFO [main][RouteDefinitionRouteLocator.java:139] - Loaded RoutePredicateFactory [Query]
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:17:49,838 INFO [main][RouteDefinitionRouteLocator.java:139] - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:17:49,838 INFO [main][RouteDefinitionRouteLocator.java:139] - Loaded RoutePredicateFactory [RemoteAddr]
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:17:49,838 INFO [main][RouteDefinitionRouteLocator.java:139] - Loaded RoutePredicateFactory [Weight]
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:17:49,838 INFO [main][RouteDefinitionRouteLocator.java:139] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:17:49,948 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:17:50,673 INFO [main][NettyWebServer.java:109] - Netty started on port(s): 63010
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:17:50,987 INFO [main][NacosServiceRegistry.java:75] - nacos registry, xc-group gateway-server 192.168.43.88:63010 register finished
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:17:51,003 INFO [main][StartupInfoLogger.java:61] - Started GatewayServer in 3.046 seconds (JVM running for 3.705)
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:33:21,015 INFO [main][SpringApplication.java:651] - No active profile set, falling back to default profiles: default
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:33:21,313 INFO [main][GenericScope.java:295] - BeanFactory id=3e161c52-59cd-3100-adc4-d640ad1ce448
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:33:21,344 INFO [main][PostProcessorRegistrationDelegate.java:335] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:33:21,344 INFO [main][PostProcessorRegistrationDelegate.java:335] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:33:21,344 INFO [main][PostProcessorRegistrationDelegate.java:335] - Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:33:21,423 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:33:21,423 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:33:21,423 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:33:21,423 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:33:22,033 INFO [main][RouteDefinitionRouteLocator.java:139] - Loaded RoutePredicateFactory [After]
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:33:22,033 INFO [main][RouteDefinitionRouteLocator.java:139] - Loaded RoutePredicateFactory [Before]
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:33:22,033 INFO [main][RouteDefinitionRouteLocator.java:139] - Loaded RoutePredicateFactory [Between]
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:33:22,033 INFO [main][RouteDefinitionRouteLocator.java:139] - Loaded RoutePredicateFactory [Cookie]
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:33:22,033 INFO [main][RouteDefinitionRouteLocator.java:139] - Loaded RoutePredicateFactory [Header]
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:33:22,033 INFO [main][RouteDefinitionRouteLocator.java:139] - Loaded RoutePredicateFactory [Host]
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:33:22,033 INFO [main][RouteDefinitionRouteLocator.java:139] - Loaded RoutePredicateFactory [Method]
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:33:22,033 INFO [main][RouteDefinitionRouteLocator.java:139] - Loaded RoutePredicateFactory [Path]
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:33:22,033 INFO [main][RouteDefinitionRouteLocator.java:139] - Loaded RoutePredicateFactory [Query]
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:33:22,033 INFO [main][RouteDefinitionRouteLocator.java:139] - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:33:22,033 INFO [main][RouteDefinitionRouteLocator.java:139] - Loaded RoutePredicateFactory [RemoteAddr]
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:33:22,033 INFO [main][RouteDefinitionRouteLocator.java:139] - Loaded RoutePredicateFactory [Weight]
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:33:22,033 INFO [main][RouteDefinitionRouteLocator.java:139] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:33:22,143 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:33:22,848 INFO [main][NettyWebServer.java:109] - Netty started on port(s): 63010
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:33:23,185 INFO [main][NacosServiceRegistry.java:75] - nacos registry, xc-group gateway-server 192.168.43.88:63010 register finished
+[${project.name}][${env:SERVER_PORT}] 2022-07-11 11:33:23,201 INFO [main][StartupInfoLogger.java:61] - Started GatewayServer in 2.979 seconds (JVM running for 3.624)

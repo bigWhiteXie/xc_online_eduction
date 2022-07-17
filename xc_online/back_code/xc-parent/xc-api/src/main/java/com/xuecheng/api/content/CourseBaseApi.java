@@ -27,6 +27,10 @@ public interface CourseBaseApi {
     @ApiImplicitParam(name = "courseBaseId", value = "课程基本信息ID", required = true, dataType = "Long", paramType = "path", example = "1")
     CourseBaseDTO getCourseBase(Long courseBaseId);
 
+    @ApiOperation("提交课程")
+    @ApiImplicitParam(name = "courseBaseId", value = "课程基本信息ID", required = true, dataType = "Long", paramType = "path", example = "1")
+    Boolean commitCourseBase(Long courseBaseId);
+
     @ApiOperation("删除课程基础信息")
     @ApiImplicitParam(name = "courseBaseId", value = "课程基本信息ID", required = true, dataType = "Long", paramType = "path", example = "1")
     Boolean removeCourseBase(Long courseBaseId);

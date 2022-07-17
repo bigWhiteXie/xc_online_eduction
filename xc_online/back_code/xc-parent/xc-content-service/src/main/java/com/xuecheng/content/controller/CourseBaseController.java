@@ -52,8 +52,15 @@ public class CourseBaseController implements CourseBaseApi {
     @GetMapping("course/{courseBaseId}")
     @Override
     public CourseBaseDTO getCourseBase(@PathVariable(value = "courseBaseId") Long courseBaseId) {
+        Long companyId = SecurityUtil.getCompanyId();
+        return courseBaseService.getCourseBaseById(courseBaseId,companyId);
+    }
 
-        return courseBaseService.getCourseBaseById(courseBaseId);
+    @GetMapping("course/commit/{courseBaseId}")
+    @Override
+    public Boolean commitCourseBase(@PathVariable("courseBaseId") Long courseBaseId) {
+        Long companyId = SecurityUtil.getCompanyId();
+        return courseBaseService.commitCourse(courseBaseId,companyId);
     }
 
     @DeleteMapping("course/{courseBaseId}")

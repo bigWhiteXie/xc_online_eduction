@@ -55,6 +55,7 @@ public class QiniuStorageHandler implements StorageHandler {
         if (params.get("tokenType").equals("1")) { //1表示获得上传凭证
             Auth auth = Auth.create(accessKey, secretKey);
             String key = (String) params.get("key");
+            //设置上传文件后，七牛云端返回给客户端的json格式
             StringMap putPolicy = new StringMap();
             putPolicy.put("returnBody", "{\"key\":\"$(key)\",\"hash\":\"$(etag)\",\"bucket\":\"$(bucket)\",\"fname\":\"$(fname)\",\"fsize\":$(fsize)}");
             putPolicy.put("returnBodyType", "application/json");
@@ -110,9 +111,9 @@ public class QiniuStorageHandler implements StorageHandler {
                 fileObject.setProtect(true);
                 fileObject.setUploadDate(LocalDateTime.now());
                 //TODO fileObject.setDownloadUrl("");
-//                String encodedFileName = URLEncoder.encode(file_putRet.key, "utf-8").replace("+", "%20");
-//                String publicUrl = String.format("%s/%s", domainOfBucket, encodedFileName);
-//                fileObject.setDownloadUrl(publicUrl);
+                String encodedFileName = URLEncoder.encode(file_putRet.key, "utf-8").replace("+", "%20");
+                String publicUrl = String.format("%s/%s", domainOfBucket, encodedFileName);
+                fileObject.setDownloadUrl(publicUrl);
 
                 return fileObject;
             } catch (Exception e) {

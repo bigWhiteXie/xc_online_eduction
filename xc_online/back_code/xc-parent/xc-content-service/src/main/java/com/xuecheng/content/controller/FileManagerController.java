@@ -56,7 +56,7 @@ public class FileManagerController implements FileManagerApi {
         requestBody.put("key",fileKey);
 
         //2.发送 获取上传凭证请求
-        ResponseEntity<Map> response = restTemplate.postForEntity(url, requestBody, Map.class);
+        ResponseEntity<Map> response = restTemplate.postForEntity(url+"generatetoken?origin=qiniu", requestBody, Map.class);
 
         //3.校验响应是否正确
         HttpStatus statusCode = response.getStatusCode();
