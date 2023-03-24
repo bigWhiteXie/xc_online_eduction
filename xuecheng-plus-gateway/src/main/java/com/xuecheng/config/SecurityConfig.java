@@ -22,6 +22,7 @@ import org.springframework.security.web.server.SecurityWebFilterChain;
   public SecurityWebFilterChain webFluxSecurityFilterChain(ServerHttpSecurity http) {
 
    return http.authorizeExchange()
+           //permitAll不会绕开springsecurity的过滤器验证，相当于只是允许该路径通过过滤器
            .pathMatchers("/**").permitAll()
            .anyExchange().authenticated()
            .and().csrf().disable().build();
