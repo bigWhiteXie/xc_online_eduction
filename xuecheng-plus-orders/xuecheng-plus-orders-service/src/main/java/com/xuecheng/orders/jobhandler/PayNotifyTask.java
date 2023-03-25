@@ -14,7 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
- * @author Mr.M
+ * @author codeXie
  * @version 1.0
  * @description TODO
  * @date 2022/10/26 11:16
@@ -66,7 +66,7 @@ public class PayNotifyTask extends MessageProcessAbstract {
      * @description 发送支付结果通知
      * @param message  消息内容
      * @return void
-     * @author Mr.M
+     * @author codeXie
      * @date 2022/9/20 9:43
      */
     private void send(MqMessage message){

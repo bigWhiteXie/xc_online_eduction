@@ -28,7 +28,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 /**
- * @author Mr.M
+ * @author Codexie
  * @version 1.0
  * @description 课程信息管理service
  * @date 2022/10/8 9:46
@@ -148,7 +148,7 @@ public class CourseBaseInfoServiceImpl implements CourseBaseInfoService {
      * @description 根据课程id查询课程信息，包括基本信息和营销信息
      * @param courseId
      * @return com.xuecheng.content.model.dto.CourseBaseInfoDto
-     * @author Mr.M
+     * @author codeXie
      * @date 2022/10/8 16:10
     */
     public CourseBaseInfoDto getCourseBaseInfo(Long courseId){

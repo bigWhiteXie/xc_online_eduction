@@ -22,7 +22,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author Mr.M
+ * @author codeXie
  * @version 1.0
  * @description TODO
  * @date 2022/10/20 10:54
@@ -65,7 +65,7 @@ public class UserServiceImpl implements UserDetailsService {
      * @description 查询用户信息
      * @param user  用户id，主键
      * @return com.xuecheng.ucenter.model.po.XcUser 用户信息
-     * @author Mr.M
+     * @author codeXie
      * @date 2022/9/29 12:19
      */
     public UserDetails getUserPrincipal(XcUserExt user){

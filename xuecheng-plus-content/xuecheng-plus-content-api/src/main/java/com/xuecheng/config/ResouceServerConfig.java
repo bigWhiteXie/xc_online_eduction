@@ -11,7 +11,7 @@ import org.springframework.security.oauth2.provider.token.TokenStore;
 
 /**
  * @description 资源服务配置
- * @author Mr.M
+ * @author codeXie
  * @date 2022/10/18 16:33
  * @version 1.0
  */

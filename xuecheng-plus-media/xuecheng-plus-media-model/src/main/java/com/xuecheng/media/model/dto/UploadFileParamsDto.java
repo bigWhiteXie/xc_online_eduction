@@ -6,7 +6,7 @@ import lombok.ToString;
 
 /**
  * @description 上传普通文件请求参数
- * @author Mr.M
+ * @author codeXie
  * @date 2022/9/12 18:49
  * @version 1.0
  */

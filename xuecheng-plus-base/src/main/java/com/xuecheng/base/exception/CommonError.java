@@ -4,7 +4,7 @@ package com.xuecheng.base.exception;
 
 /**
  * @description 通用错误信息
- * @author Mr.M
+ * @author codeXie
  * @date 2022/9/6 11:29
  * @version 1.0
  */

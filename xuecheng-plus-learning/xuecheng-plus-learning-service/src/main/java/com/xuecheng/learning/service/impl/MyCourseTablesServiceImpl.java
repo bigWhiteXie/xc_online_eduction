@@ -23,7 +23,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 /**
- * @author Mr.M
+ * @author codeXie
  * @version 1.0
  * @description TODO
  * @date 2022/10/25 9:43
@@ -171,7 +171,7 @@ public class MyCourseTablesServiceImpl implements MyCourseTablesService {
      * @description 添加到我的课程表
      * @param xcChooseCourse 选课记录
      * @return com.xuecheng.learning.model.po.XcCourseTables
-     * @author Mr.M
+     * @author codeXie
      * @date 2022/10/3 11:24
      */
     @Transactional
@@ -231,7 +231,7 @@ public class MyCourseTablesServiceImpl implements MyCourseTablesService {
      * @param userId
      * @param courseId
      * @return com.xuecheng.learning.model.po.XcCourseTables
-     * @author Mr.M
+     * @author codeXie
      * @date 2022/10/2 17:07
      */
     public XcCourseTables getXcCourseTables(String userId,Long courseId){

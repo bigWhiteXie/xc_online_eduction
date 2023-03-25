@@ -17,7 +17,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
 /**
- * @author Mr.M
+ * @author codeXie
  * @version 1.0
  * @description 图片验证码生成器
  * @date 2022/9/29 16:16

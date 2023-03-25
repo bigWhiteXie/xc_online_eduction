@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 
 /**
  * @description 消息处理测试类，继承MessageProcessAbstract
- * @author Mr.M
+ * @author codeXie
  * @date 2022/9/21 21:44
  * @version 1.0
  */

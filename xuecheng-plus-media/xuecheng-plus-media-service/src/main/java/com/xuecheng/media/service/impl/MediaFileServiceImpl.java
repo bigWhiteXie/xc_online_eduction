@@ -34,7 +34,7 @@ import java.time.LocalDateTime;
 import java.util.*;
 
 /**
- * @author Mr.M
+ * @author codeXie
  * @version 1.0
  * @description TODO
  * @date 2022/9/10 8:58
@@ -133,7 +133,7 @@ public class MediaFileServiceImpl implements MediaFileService {
      * @param objectName
      * @return com.xuecheng.media.model.po.MediaFiles
      * @description 将文件信息入库
-     * @author Mr.M
+     * @author codeXie
      * @date 2022/10/14 9:14
      */
     @Transactional
@@ -360,7 +360,7 @@ public class MediaFileServiceImpl implements MediaFileService {
      * @param fileMd5
      * @param chunkTotal 分块数量
      * @return java.io.File[] 分块文件数组
-     * @author Mr.M
+     * @author codeXie
      * @date 2022/10/14 15:07
     */
     private File[] checkChunkStatus(String fileMd5,int chunkTotal ){

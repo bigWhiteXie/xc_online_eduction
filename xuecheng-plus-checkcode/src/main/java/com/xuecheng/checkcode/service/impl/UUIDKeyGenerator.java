@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import java.util.UUID;
 
 /**
- * @author Mr.M
+ * @author codeXie
  * @version 1.0
  * @description uuid生成器
  * @date 2022/9/29 16:16

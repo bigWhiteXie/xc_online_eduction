@@ -3,7 +3,7 @@ package com.xuecheng.content.model.dto;
 import lombok.Data;
 
 /**
- * @author Mr.M
+ * @author codeXie
  * @version 1.0
  * @description TODO
  * @date 2022/10/7 16:08

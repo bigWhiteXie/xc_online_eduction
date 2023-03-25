@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import java.util.Random;
 
 /**
- * @author Mr.M
+ * @author codeXie
  * @version 1.0
  * @description 数字字母生成器
  * @date 2022/9/29 18:28

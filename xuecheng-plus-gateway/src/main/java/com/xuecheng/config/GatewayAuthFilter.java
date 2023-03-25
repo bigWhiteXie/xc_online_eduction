@@ -26,7 +26,7 @@ import java.util.Properties;
 import java.util.Set;
 
 /**
- * @author Mr.M
+ * @author codeXie
  * @version 1.0
  * @description 网关认证过虑器
  * @date 2022/9/27 12:10

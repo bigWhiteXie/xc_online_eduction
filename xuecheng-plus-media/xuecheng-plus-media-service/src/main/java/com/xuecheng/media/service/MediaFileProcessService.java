@@ -5,7 +5,7 @@ import com.xuecheng.media.model.po.MediaProcess;
 import java.util.List;
 
 /**
- * @author Mr.M
+ * @author codeXie
  * @version 1.0
  * @description TODO
  * @date 2022/10/16 15:11
@@ -19,7 +19,7 @@ public interface MediaFileProcessService {
      * @param count      获取记录数
      * @return java.util.List<com.xuecheng.media.model.po.MediaProcess>
      * @description 获取待处理任务
-     * @author Mr.M
+     * @author codeXie
      * @date 2022/9/14 14:49
      */
     public List<MediaProcess> getMediaProcessList(int shardIndex, int shardTotal, int count);
@@ -33,7 +33,7 @@ public interface MediaFileProcessService {
      * @param errorMsg 错误信息
      * @return void
      * @description 保存任务结果
-     * @author Mr.M
+     * @author codeXie
      * @date 2022/10/15 11:29
      */
     void saveProcessFinishStatus(Long taskId, String status, String fileId, String url, String errorMsg);

@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 import java.io.File;
 
 /**
- * @author Mr.M
+ * @author codeXie
  * @version 1.0
  * @description 课程发布任务
  * @date 2022/10/17 17:11

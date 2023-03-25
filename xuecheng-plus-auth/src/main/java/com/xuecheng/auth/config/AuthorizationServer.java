@@ -16,7 +16,7 @@ import javax.annotation.Resource;
 
 /**
  * @description 授权服务器配置
- * @author Mr.M
+ * @author codeXie
  * @date 2022/9/26 22:25
  * @version 1.0
  */

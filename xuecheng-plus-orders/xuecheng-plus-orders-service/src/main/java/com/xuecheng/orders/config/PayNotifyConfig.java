@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * @description 消息队列配置
- * @author Mr.M
+ * @author codeXie
  * @date 2022/10/4 22:25
  * @version 1.0
  */

@@ -3,7 +3,7 @@ package com.xuecheng.orders.model.dto;
 import lombok.Data;
 
 /**
- * @author Mr.M
+ * @author codeXie
  * @version 1.0
  * @description 支付结果数据, 用于接收支付结果通知处理逻辑
  * @date 2022/10/4 16:49

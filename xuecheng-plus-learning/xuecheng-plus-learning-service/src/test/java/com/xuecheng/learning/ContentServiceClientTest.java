@@ -9,7 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 /**
  * @description 内容管理远程接口测试
- * @author Mr.M
+ * @author codeXie
  * @date 2022/10/25 9:16
  * @version 1.0
  */

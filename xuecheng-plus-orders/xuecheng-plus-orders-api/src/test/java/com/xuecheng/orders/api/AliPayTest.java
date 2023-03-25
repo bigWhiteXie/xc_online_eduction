@@ -12,7 +12,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 
 /**
- * @author Mr.M
+ * @author codeXie
  * @version 1.0
  * @description 支付宝查询接口
  * @date 2022/10/4 17:18

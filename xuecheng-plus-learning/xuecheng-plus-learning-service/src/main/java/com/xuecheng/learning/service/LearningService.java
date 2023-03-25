@@ -4,7 +4,7 @@ import com.xuecheng.base.model.RestResponse;
 
 /**
  * @description 在线学习的service接口
- * @author Mr.M
+ * @author codeXie
  * @date 2022/10/27 9:00
  * @version 1.0
  */
@@ -16,7 +16,7 @@ public interface LearningService {
    * @param teachplanId 课程计划id
    * @param mediaId 视频文件id
    * @return com.xuecheng.base.model.RestResponse<java.lang.String>
-   * @author Mr.M
+   * @author codeXie
    * @date 2022/10/5 9:08
    */
   public RestResponse<String> getVideo(String userId, Long courseId, Long teachplanId, String mediaId);

@@ -36,7 +36,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author Mr.M
+ * @author codeXie
  * @version 1.0
  * @description 课程搜索service实现类
  * @date 2022/9/24 22:48

@@ -10,7 +10,7 @@ import java.io.RandomAccessFile;
 import java.util.*;
 
 /**
- * @author Mr.M
+ * @author codeXie
  * @version 1.0
  * @description 大文件分块、合并
  * @date 2022/10/14 10:48

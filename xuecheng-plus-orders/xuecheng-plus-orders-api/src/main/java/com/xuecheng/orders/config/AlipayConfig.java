@@ -1,7 +1,7 @@
 package com.xuecheng.orders.config;
  /**
  * @description 支付宝配置参数
- * @author Mr.M
+ * @author codeXie
  * @date 2022/10/20 22:45
  * @version 1.0
  */

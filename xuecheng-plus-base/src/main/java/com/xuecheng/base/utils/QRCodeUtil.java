@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.util.HashMap;
 
 /**
- * @author Mr.M
+ * @author codeXie
  * @version 1.0
  * @description 二维码生成工具
  * @date 2022/10/3 0:03

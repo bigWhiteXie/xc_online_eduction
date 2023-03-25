@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 /**
- * @author Mr.M
+ * @author codeXie
  * @version 1.0
  * @description 大文件上传接口
  * @date 2022/9/6 11:29

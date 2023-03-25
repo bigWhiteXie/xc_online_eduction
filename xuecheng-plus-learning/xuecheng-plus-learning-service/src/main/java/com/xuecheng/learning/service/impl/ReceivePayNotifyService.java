@@ -14,7 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
- * @author Mr.M
+ * @author codeXie
  * @version 1.0
  * @description TODO
  * @date 2022/10/26 11:24
@@ -76,7 +76,7 @@ public class ReceivePayNotifyService {
      * @description 回复消息
      * @param message  回复消息
      * @return void
-     * @author Mr.M
+     * @author codeXie
      * @date 2022/9/20 9:43
      */
     public void send(MqMessage message){

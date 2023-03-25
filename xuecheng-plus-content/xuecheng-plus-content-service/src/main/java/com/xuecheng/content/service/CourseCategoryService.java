@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * @description 课程分类管理的接口
- * @author Mr.M
+ * @author codeXie
  * @date 2022/10/8 15:05
  * @version 1.0
  */

@@ -1,7 +1,7 @@
 package com.xuecheng.base.exception;
  /**
  * @description 校验分组
- * @author Mr.M
+ * @author codeXie
  * @date 2022/9/8 15:05
  * @version 1.0
  */

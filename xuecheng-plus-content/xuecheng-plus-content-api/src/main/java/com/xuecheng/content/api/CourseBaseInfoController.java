@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.*;
 
 /**
  * @description 课程信息管理
- * @author Mr.M
+ * @author codeXie
  * @date 2022/10/7 16:22
  * @version 1.0
  */

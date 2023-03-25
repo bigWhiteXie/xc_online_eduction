@@ -9,7 +9,7 @@ import java.io.FileOutputStream;
 import java.io.FilterInputStream;
 
 /**
- * @author Mr.M
+ * @author codeXie
  * @version 1.0
  * @description 测试minio上传文件、删除文件、查询文件
  * @date 2022/10/13 14:42

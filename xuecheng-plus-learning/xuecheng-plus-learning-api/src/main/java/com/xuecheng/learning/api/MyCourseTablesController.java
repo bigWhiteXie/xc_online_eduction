@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @description 我的课程表接口
- * @author Mr.M
+ * @author codeXie
  * @date 2022/10/25 9:40
  * @version 1.0
  */
